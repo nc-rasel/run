@@ -27,11 +27,11 @@ body {
 a {
   text-decoration: none;
   outline: none;
-  -webkit-transition: color 0.15s ease-out;
-  -moz-transition: color 0.15s ease-out;
-  -o-transition: color 0.15s ease-out;
-  -ms-transition: color 0.15s ease-out;
-  transition:color 0.15s ease-out;
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  -o-transition: all 0.15s ease-out;
+  -ms-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
 }
 .fright {
   float: right;
@@ -58,4 +58,40 @@ p, ul, li {
 }
 ul li {
   list-style: none;
+}
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: all 1s ease; /* Safari and Chrome */
+  -moz-transition: all 1s ease; /* Firefox */
+  -ms-transition: all 1s ease; /* IE 9 */
+  -o-transition: all 1s ease; /* Opera */
+  transition: all 1s ease;
+}
+
+.over-info {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  background-color: rgba($jetblack,0.5);
+  color: $white;
+  padding: 20px;
+}
+.play-btn {
+  width: 60px;
+  height: 60px;
+  background-color: rgba($playbtn-color, 0.6);
+  background-image: url('../images/play-btn.png');
+  background-repeat: no-repeat;
+  background-position: 55% 50%;
+  text-indent: -999em;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  &:hover {
+    background-color: rgba($playbtn-color, 1);
+  }
 }

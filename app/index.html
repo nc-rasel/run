@@ -1,22 +1,31 @@
 <!DOCTYPE html>
+<!--
+  runway.com
+  v1
+  Written by S.M Rasel Mahamud (rasel.me)
+-->
 <html lang="en">
 <head>
+  <!-- What character encoding are we using? -->
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
+  <!-- Define the viewport for mobile, disable zooming -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <!-- The title of this page -->
   <title>Runway</title>
   <!-- stylesheets -->
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700,600,300italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/styles.css">
 
-  <!-- javascript here -->
+  <!-- Essential javascripts -->
   <script type="text/javascript" src="/js/simpletabs_1.3.js"></script>
   <script type="text/javascript"src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
   <script type="text/javascript" src="/js/vendor/jquery.fitvids1.1.js"></script>
   <script type="text/javascript" src="/js/vendor/jquery.bxslider.js"></script>
 </head>
+
+<!-- Our app starts here -->
 <body>
  <!-- view port helper need to remove for final production -->
-
  <div class="helper-viewport">
   <p>Width:  <span id="width"></span> <br>Height: <span id="height"></span></p>
 </div>
@@ -58,7 +67,7 @@
 </div>
 
 <div class="ad-placholder">
-  <p>ad</p>
+  <img src="images/big-hori-ad.png" alt="" />
 </div>
 
 <div class="collections-holder">
@@ -66,31 +75,50 @@
   <div class="primary">
     <ul>
       <li>
-        <img src="images/c1.png" alt="" />
+        <a href="javascript:;" title="Lafayette SUMMER 2015">
+          <img src="images/c1.png" alt="Lafayette SUMMER 2015" />
+          <span class="over-info">Lafayette SUMMER 2015</span>
+        </a>
       </li>
       <li>
-        <img src="images/c2.png" alt="" />
+        <a href="javascript:;" title="Suzy Wong 2015/2016">
+          <img src="images/c2.png" alt="Suzy Wong 2015/2016" />
+          <span class="over-info">Suzy Wong 2015/2016</span>
+        </a>
       </li>
       <li>
-        <img src="images/c3.png" alt="" />
+        <a href="javascript:;" title="YSL Seasons">
+          <img src="images/c3.png" alt="YSL Seasons" />
+          <span class="over-info">YSL Seasons</span>
+        </a>
       </li>
       <li>
-        <img src="images/c4.png" alt="" />
+        <a href="javascript:;" title="Marc Jacobs 15/16">
+          <img src="images/c4.png" alt="Marc Jacobs 15/16" />
+          <span class="over-info">Marc Jacobs 15/16</span>
+        </a>
       </li>
     </ul>
   </div>
   <div class="secondary">
     <ul>
       <li>
-        <img src="images/ad-box.png" alt="" />
+        <a href="javascript:;" title="">
+          <img src="images/ad-box.png" alt="" />
+        </a>
       </li>
       <li>
-        <img src="images/c5.png" alt="" />
+        <a href="javascript:;" title="Armani Xchange">
+          <img src="images/c5.png" alt="Armani Xchange" />
+          <span class="over-info">Armani Xchange</span>
+        </a>
       </li>
       <li>
-        <img src="images/c6.png" alt="" />
+        <a href="javascript:;" title="Chanel Summer Splash">
+          <img src="images/c6.png" alt="Chanel Summer Splash" />
+          <span class="over-info">Chanel Summer Splash</span>
+        </a>
       </li>
-
     </ul>
   </div>
 </div>
@@ -107,15 +135,23 @@
   <ul>
     <li>
       <img src="images/shows1.png" alt="" />
+      <span class="over-info">Lafayette SUMMER 2015</span>
+      <a href="javascript:;" class="play-btn" title="Play">Play</a>
     </li>
     <li>
       <img src="images/shows2.png" alt="" />
+      <span class="over-info">Suzy Wong 2015/2016</span>
+      <a href="javascript:;" class="play-btn" title="Play">Play</a>
     </li>
     <li>
       <img src="images/shows3.png" alt="" />
+      <span class="over-info">Marc Jacobs 15/16</span>
+      <a href="javascript:;" class="play-btn" title="Play">Play</a>
     </li>
     <li>
       <img src="images/shows4.png" alt="" />
+      <span class="over-info">YSL Seasons</span>
+      <a href="javascript:;" class="play-btn" title="Play">Play</a>
     </li>
   </ul>
 </div>
