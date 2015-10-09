@@ -1,0 +1,65 @@
+.navbar {
+  display: block;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+  color: #fff;
+
+  &[role="navigation"] {
+    height: 63px;
+  }
+  .header-bg {
+    background: linear-gradient(to right, #2d2d2d, #4b3063, #261738);
+    height: 63px;
+  }
+  h1 {
+    display: inline-block;
+    margin: 0; padding: 0;
+    a {
+      width: 152px;
+      height: 35px;
+      display: inline-block;
+      margin-top: 14px;
+      background: url('../images/runway-header-logo.png') no-repeat 0 0;
+      &.replace {
+        text-indent: -999em;
+      }
+    }
+  }
+
+  a {
+    color: #fff;
+
+  }
+  [role="primary-nav"], [role="secondary-nav"] {
+    .item {
+      position: relative;
+    }
+  }
+  [role="primary-nav"] {
+    .item {
+      margin-right: 37px;
+      top: -8px;
+      text-transform: uppercase;
+      &:first-child {
+        margin-left: 55px;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  [role="secondary-nav"] {
+    .item {
+      top: 20px;
+      margin-right: 10px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    float: right;
+  }
+}

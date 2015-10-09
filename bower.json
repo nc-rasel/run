@@ -1,0 +1,23 @@
+{
+  "name": "runway",
+  "version": "0.0.0",
+  "authors": [
+    "Rasel Mahamud <rasel.rony@sekai-lab-bd.com> <rasel.me>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "breakpoint-sass": "~2.5.0",
+    "jeet": "~6.1.2",
+    "susy": "~2.2.2"
+  },
+  "devDependencies": {
+    "breakpoint-sass": "~2.5.0"
+  }
+}

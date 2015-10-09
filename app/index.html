@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
+  <title>Runway</title>
+  <!-- stylesheets -->
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700,600,300italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- javascript here -->
+  <script type="text/javascript" src="/js/simpletabs_1.3.js"></script>
+  <script type="text/javascript"src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/vendor/jquery.fitvids1.1.js"></script>
+  <script type="text/javascript" src="/js/vendor/jquery.bxslider.js"></script>
+</head>
+<body>
+ <!-- view port helper need to remove for final production -->
+
+ <div class="helper-viewport">
+  <p>Width:  <span id="width"></span> <br>Height: <span id="height"></span></p>
+</div>
+<!-- Need to add class terms_condition to body dynamically -->
+
+
+
+
+<div class="primary-header navbar" role="navigation">
+    <div class="container-fluid header-bg">
+      <nav>
+        <h1><a href="/" class="replace">Runway</a></h1>
+        <span role="primary-nav">
+          <a href="#" class="item">From the run way</a>
+          <a href="#" class="item">Collections</a>
+          <a href="#" class="item">Designers</a>
+          <a href="#" class="item">Shows</a>
+        </span>
+        <span role="secondary-nav">
+          <a href="#" class="item">Search</a>
+          <a href="#" class="item">Sign in</a>
+          <a href="#" class="item">Register</a>
+          <a href="#" class="item">Wishlist <span>(0)</span></a>
+          <a href="#" class="item">Cart <span>(0)</span></a>
+        </span>
+      </nav>
+    </div>
+</div>
+
+<div class="hero-area-slider">
+  <ul class="bxslider">
+    <li>
+      <iframe src="http://player.vimeo.com/video/17914974" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+    </li>
+    <li>
+      <iframe src="http://player.vimeo.com/video/28523422?title=0&amp;byline=0&amp;portrait=0&amp;color=4584be" width="800/embed/?moog_width=800" height="450" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+    </li>
+  </ul>
+</div>
+
+<div class="ad-placholder">
+  <p>ad</p>
+</div>
+
+<div class="collections-holder">
+  <h3>Collections</h3>
+  <div class="primary">
+    <ul>
+      <li>
+        <img src="images/c1.png" alt="" />
+      </li>
+      <li>
+        <img src="images/c2.png" alt="" />
+      </li>
+      <li>
+        <img src="images/c3.png" alt="" />
+      </li>
+      <li>
+        <img src="images/c4.png" alt="" />
+      </li>
+    </ul>
+  </div>
+  <div class="secondary">
+    <ul>
+      <li>
+        <img src="images/ad-box.png" alt="" />
+      </li>
+      <li>
+        <img src="images/c5.png" alt="" />
+      </li>
+      <li>
+        <img src="images/c6.png" alt="" />
+      </li>
+
+    </ul>
+  </div>
+</div>
+
+<div class="designers-holder">
+  <h3>Designers</h3>
+  <h4>Featured Aug/Sept</h4>
+  <div class="designer-slider"></div>
+</div>
+
+<div class="shows">
+  <h3>Shows</h3>
+  <h4>This Season</h4>
+  <ul>
+    <li>
+      <img src="images/shows1.png" alt="" />
+    </li>
+    <li>
+      <img src="images/shows2.png" alt="" />
+    </li>
+    <li>
+      <img src="images/shows3.png" alt="" />
+    </li>
+    <li>
+      <img src="images/shows4.png" alt="" />
+    </li>
+  </ul>
+</div>
+
+<div class="main-content-holder">
+  <div class="container-fluid">
+    <p>Content Here ... part of this is under the header, i need to see all of it without messing up the sticky footer</p>
+
+
+
+  </div>
+</div>
+
+<div class="primary-footer">
+    <span>Sticky footer!</span>
+</div>
+
+
+
+
+<script type="text/javascript">
+ $(document).ready(function(e) {
+   showViewportSize();
+  //  slider
+  $('.bxslider').bxSlider({
+    video: true,
+    useCSS: true,
+    touchEnabled: true,
+    adaptiveHeight: true,
+    pager: false
+  });
+ });
+ $(window).resize(function(e) {
+   showViewportSize();
+ });
+ function showViewportSize() {
+   var the_width = $(window).width();
+   var the_height = $(window).height();
+   $('#width').text(the_width);
+   $('#height').text(the_height);
+ }
+</script>
+
+
+
+ </body>
+ </html>

@@ -1,0 +1,38 @@
+@import '../../bower_components/jeet/scss/jeet/index';
+
+@import "normalize";
+@import "base";
+@import "jquery.bxslider";
+@import "colors";
+@import "tab";
+@import "nav";
+
+
+
+.container-fluid {
+  @include center(1200px, 20px);
+}
+section {
+  @include center(1200px, 20px);
+  > * {
+    @include span(1/2);
+  }
+}
+
+.hero-area-slider {
+  @include center(1200px);
+  background-color: #111;
+}
+.collections-holder {
+  @include center(1200px, 15px);
+  background-color: #fff;
+  .primary {
+    @include column(2/3, $gutter: 1.5);
+    ul li {
+      float: left;
+    }
+  }
+  .secondary {
+    @include column(1/3);
+  }
+}
