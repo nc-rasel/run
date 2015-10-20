@@ -802,6 +802,9 @@ div.simpleTabsContent.currentTab {
       .navbar [role="secondary-nav"] .item:last-child {
         margin-right: 0; }
 
+.helper-viewport {
+  color: #fff; }
+
 .container-fluid {
   *zoom: 1;
   width: auto;
@@ -876,10 +879,17 @@ div.simpleTabsContent.currentTab {
     width: 804px;
     margin-left: 0%;
     margin-right: 0%; }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .collections-holder .primary {
+        width: 100%;
+        float: none; } }
     .collections-holder .primary ul li {
       float: left;
       width: 395px;
       position: relative; }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        .collections-holder .primary ul li {
+          width: 360px; } }
       .collections-holder .primary ul li:nth-child(odd) {
         margin-right: 14px; }
       .collections-holder .primary ul li a {
@@ -949,3 +959,37 @@ div.simpleTabsContent.currentTab {
       float: right; }
     .shows ul li:nth-child(2n + 1) {
       clear: both; }
+
+.designers-holder {
+  *zoom: 1;
+  width: auto;
+  max-width: 1200px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  background: linear-gradient(to right, #2d2d2d, #4b3063, #261738);
+  padding-bottom: 20px; }
+  .designers-holder:before, .designers-holder:after {
+    content: '';
+    display: table; }
+  .designers-holder:after {
+    clear: both; }
+
+.single-designer {
+  position: relative;
+  display: block; }
+  .single-designer .overlay-name-company {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: #fff;
+    padding: 10px 0; }
+    .single-designer .overlay-name-company h3 {
+      margin: 0;
+      padding: 0; }

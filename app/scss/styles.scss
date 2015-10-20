@@ -9,7 +9,9 @@
 @import "nav";
 
 
-
+.helper-viewport {
+  color: #fff;
+}
 .container-fluid {
   @include center(1200px, 20px);
 }
@@ -35,10 +37,18 @@
     width: 804px;
     margin-left: 0%;
     margin-right: 0%;
+    @include tablet {
+      width: 100%;
+      float: none;
+    }
     ul li {
       float: left;
       width: 395px;
       position: relative;
+      
+      @include tablet {
+        width: 360px;
+      }
       &:nth-child(odd) {
         margin-right: 14px;
       }
@@ -89,5 +99,29 @@
     @include col(1/2, $gutter: 1.4, $cycle: 2);
     position: relative;
     margin-bottom: 10px;
+  }
+}
+
+.designers-holder {
+  @include center(1200px);
+  background: linear-gradient(to right, #2d2d2d, #4b3063, #261738);
+  padding-bottom: 20px;
+}
+.single-designer {
+  position: relative;
+  display: block;
+  .overlay-name-company {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba($jetblack, 0.5);
+    text-align: center;
+    color: #fff;
+    padding: 10px 0;
+    h3 {
+      margin: 0;
+      padding: 0;
+    }
   }
 }

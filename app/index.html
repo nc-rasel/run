@@ -126,7 +126,100 @@
 <div class="designers-holder">
   <h3>Designers</h3>
   <h4>Featured Aug/Sept</h4>
-  <div class="designer-slider"></div>
+  <div class="designer-slider">
+    <ul class="designer">
+      <li>
+        <a href="javascript:;" class="single-designer">
+          <img src="/images/d1.png" />
+          <div class="overlay-name-company">
+            <h3>Name</h3>
+            <span>Company Name</span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="javascript:;" class="single-designer">
+          <img src="/images/d2.png" />
+          <div class="overlay-name-company">
+            <h3>Name</h3>
+            <span>Company Name</span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="javascript:;" class="single-designer">
+          <img src="/images/d3.png" />
+          <div class="overlay-name-company">
+            <h3>Name</h3>
+            <span>Company Name</span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="javascript:;" class="single-designer">
+          <img src="/images/d4.png" />
+          <div class="overlay-name-company">
+            <h3>Name</h3>
+            <span>Company Name</span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="javascript:;" class="single-designer">
+          <img src="/images/d5.png" />
+          <div class="overlay-name-company">
+            <h3>Name</h3>
+            <span>Company Name</span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="javascript:;" class="single-designer">
+          <img src="/images/d1.png" />
+          <div class="overlay-name-company">
+            <h3>Name</h3>
+            <span>Company Name</span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="javascript:;" class="single-designer">
+          <img src="/images/d2.png" />
+          <div class="overlay-name-company">
+            <h3>Name</h3>
+            <span>Company Name</span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="javascript:;" class="single-designer">
+          <img src="/images/d3.png" />
+          <div class="overlay-name-company">
+            <h3>Name</h3>
+            <span>Company Name</span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="javascript:;" class="single-designer">
+          <img src="/images/d4.png" />
+          <div class="overlay-name-company">
+            <h3>Name</h3>
+            <span>Company Name</span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="javascript:;" class="single-designer">
+          <img src="/images/d5.png" />
+          <div class="overlay-name-company">
+            <h3>Name</h3>
+            <span>Company Name</span>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
 </div>
 
 <div class="shows">
@@ -182,6 +275,15 @@
     touchEnabled: true,
     adaptiveHeight: true,
     pager: false
+  });
+
+  $('.designer').bxSlider({
+    minSlides: 2,
+    maxSlides: 5,
+    slideWidth: 220,
+    slideMargin: 15,
+    pager: false,
+    moveSlides: 1
   });
  });
  $(window).resize(function(e) {
