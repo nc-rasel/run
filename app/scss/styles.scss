@@ -91,6 +91,13 @@
   }
 }
 
+.collections-holder {
+	.title {
+		float: none;
+		color: #7d4295;
+		display: block;
+	}
+}
 // home page shows
 .shows {
   @include center(1200px, 14px);
@@ -100,11 +107,33 @@
     position: relative;
     margin-bottom: 10px;
   }
+	.title {
+		color: #7d4295;
+	}
+	.sub-title {
+		color: #111;
+	}
 }
-
+.title, .sub-title {
+	display: inline-block;
+	float: left;
+	color: #fff;
+	font-weight: 100;
+	font-size: 46px;
+	margin: 15px;
+	padding: 0;
+	margin-left: 0;
+	text-transform: uppercase;
+}
+.sub-title {
+	float: right;
+	color: #7e3f98;
+	font-size: 32px;
+	margin-top: 24px;
+}
 .designers-holder {
   @include center(1200px);
-  background: linear-gradient(to right, #2d2d2d, #4b3063, #261738);
+  background: linear-gradient(to right, #29232f, #27202d, #140c1c);
   padding-bottom: 20px;
 }
 .single-designer {

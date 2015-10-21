@@ -489,9 +489,10 @@ html, body {
   padding: 0; }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   padding-top: 63px;
-  background-color: #282828; }
+  background-color: #282828;
+  font-weight: 300; }
 
 a {
   text-decoration: none;
@@ -923,6 +924,11 @@ div.simpleTabsContent.currentTab {
           /* Opera */
           transform: scale(1.25); }
 
+.collections-holder .title {
+  float: none;
+  color: #7d4295;
+  display: block; }
+
 .shows {
   *zoom: 1;
   width: auto;
@@ -959,6 +965,27 @@ div.simpleTabsContent.currentTab {
       float: right; }
     .shows ul li:nth-child(2n + 1) {
       clear: both; }
+  .shows .title {
+    color: #7d4295; }
+  .shows .sub-title {
+    color: #111; }
+
+.title, .sub-title {
+  display: inline-block;
+  float: left;
+  color: #fff;
+  font-weight: 100;
+  font-size: 46px;
+  margin: 15px;
+  padding: 0;
+  margin-left: 0;
+  text-transform: uppercase; }
+
+.sub-title {
+  float: right;
+  color: #7e3f98;
+  font-size: 32px;
+  margin-top: 24px; }
 
 .designers-holder {
   *zoom: 1;
@@ -970,7 +997,7 @@ div.simpleTabsContent.currentTab {
   margin-left: auto;
   padding-left: 0;
   padding-right: 0;
-  background: linear-gradient(to right, #2d2d2d, #4b3063, #261738);
+  background: linear-gradient(to right, #29232f, #27202d, #140c1c);
   padding-bottom: 20px; }
   .designers-holder:before, .designers-holder:after {
     content: '';
