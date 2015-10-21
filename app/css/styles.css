@@ -525,7 +525,7 @@ p, ul, li {
 ul li {
   list-style: none; }
 
-img {
+img:not(.notresponsive) {
   width: 100%;
   max-width: 100%;
   height: auto;
@@ -637,28 +637,29 @@ img {
 
 /* DIRECTION CONTROLS (NEXT / PREV) */
 .bx-wrapper .bx-prev {
-  left: 10px;
-  background: url("../images/controls.png") no-repeat 0 -32px; }
+  left: -1px;
+  background: url("../images/left-arrow.png") no-repeat 0 0; }
 
 .bx-wrapper .bx-next {
-  right: 10px;
-  background: url("../images/controls.png") no-repeat -43px -32px; }
+  right: -1px;
+  background: url("../images/right-arrow.png") no-repeat 0 0; }
 
 .bx-wrapper .bx-prev:hover {
   background-position: 0 0; }
 
 .bx-wrapper .bx-next:hover {
-  background-position: -43px 0; }
+  background-position: 0 0; }
 
 .bx-wrapper .bx-controls-direction a {
   position: absolute;
   top: 50%;
-  margin-top: -16px;
+  margin-top: -86px;
   outline: 0;
-  width: 32px;
-  height: 32px;
   text-indent: -9999px;
-  z-index: 9999; }
+  z-index: 9999;
+  width: 49px;
+  height: 172px;
+  background-color: rgba(126, 63, 152, 0.9); }
 
 .bx-wrapper .bx-controls-direction a.disabled {
   display: none; }
@@ -788,9 +789,11 @@ div.simpleTabsContent.currentTab {
   .navbar [role="primary-nav"] .item, .navbar [role="secondary-nav"] .item {
     position: relative; }
   .navbar [role="primary-nav"] .item {
-    margin-right: 37px;
+    margin-right: 27px;
     top: -8px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700; }
     .navbar [role="primary-nav"] .item:first-child {
       margin-left: 55px; }
     .navbar [role="primary-nav"] .item:last-child {
@@ -799,7 +802,9 @@ div.simpleTabsContent.currentTab {
     float: right; }
     .navbar [role="secondary-nav"] .item {
       top: 20px;
-      margin-right: 10px; }
+      margin-right: 10px;
+      text-transform: uppercase;
+      font-size: 10px; }
       .navbar [role="secondary-nav"] .item:last-child {
         margin-right: 0; }
 
@@ -807,7 +812,6 @@ div.simpleTabsContent.currentTab {
   color: #fff; }
 
 .container-fluid {
-  *zoom: 1;
   width: auto;
   max-width: 1200px;
   float: none;
@@ -816,14 +820,16 @@ div.simpleTabsContent.currentTab {
   margin-left: auto;
   padding-left: 20px;
   padding-right: 20px; }
-  .container-fluid:before, .container-fluid:after {
-    content: '';
+  .container-fluid {
+    *zoom: 1; }
+  .container-fluid:before,
+  .container-fluid:after {
+    content: "";
     display: table; }
   .container-fluid:after {
     clear: both; }
 
 .hero-area-slider {
-  *zoom: 1;
   width: auto;
   max-width: 1200px;
   float: none;
@@ -833,14 +839,16 @@ div.simpleTabsContent.currentTab {
   padding-left: 0;
   padding-right: 0;
   background-color: #111; }
-  .hero-area-slider:before, .hero-area-slider:after {
-    content: '';
+  .hero-area-slider {
+    *zoom: 1; }
+  .hero-area-slider:before,
+  .hero-area-slider:after {
+    content: "";
     display: table; }
   .hero-area-slider:after {
     clear: both; }
 
 .ad-placholder {
-  *zoom: 1;
   width: auto;
   max-width: 1200px;
   float: none;
@@ -851,14 +859,16 @@ div.simpleTabsContent.currentTab {
   padding-right: 14px;
   background-color: #fff;
   padding-top: 15px; }
-  .ad-placholder:before, .ad-placholder:after {
-    content: '';
+  .ad-placholder {
+    *zoom: 1; }
+  .ad-placholder:before,
+  .ad-placholder:after {
+    content: "";
     display: table; }
   .ad-placholder:after {
     clear: both; }
 
 .collections-holder {
-  *zoom: 1;
   width: auto;
   max-width: 1200px;
   float: none;
@@ -867,9 +877,13 @@ div.simpleTabsContent.currentTab {
   margin-left: auto;
   padding-left: 14px;
   padding-right: 14px;
-  background-color: #fff; }
-  .collections-holder:before, .collections-holder:after {
-    content: '';
+  background-color: #fff;
+  padding-bottom: 5px; }
+  .collections-holder {
+    *zoom: 1; }
+  .collections-holder:before,
+  .collections-holder:after {
+    content: "";
     display: table; }
   .collections-holder:after {
     clear: both; }
@@ -930,7 +944,6 @@ div.simpleTabsContent.currentTab {
   display: block; }
 
 .shows {
-  *zoom: 1;
   width: auto;
   max-width: 1200px;
   float: none;
@@ -940,13 +953,15 @@ div.simpleTabsContent.currentTab {
   padding-left: 14px;
   padding-right: 14px;
   background-color: #fff; }
-  .shows:before, .shows:after {
-    content: '';
+  .shows {
+    *zoom: 1; }
+  .shows:before,
+  .shows:after {
+    content: "";
     display: table; }
   .shows:after {
     clear: both; }
   .shows ul li {
-    *zoom: 1;
     float: left;
     clear: none;
     text-align: inherit;
@@ -955,8 +970,11 @@ div.simpleTabsContent.currentTab {
     margin-right: 1.4%;
     position: relative;
     margin-bottom: 10px; }
-    .shows ul li:before, .shows ul li:after {
-      content: '';
+    .shows ul li {
+      *zoom: 1; }
+    .shows ul li:before,
+    .shows ul li:after {
+      content: "";
       display: table; }
     .shows ul li:after {
       clear: both; }
@@ -988,7 +1006,6 @@ div.simpleTabsContent.currentTab {
   margin-top: 24px; }
 
 .designers-holder {
-  *zoom: 1;
   width: auto;
   max-width: 1200px;
   float: none;
@@ -999,11 +1016,16 @@ div.simpleTabsContent.currentTab {
   padding-right: 0;
   background: linear-gradient(to right, #29232f, #27202d, #140c1c);
   padding-bottom: 20px; }
-  .designers-holder:before, .designers-holder:after {
-    content: '';
+  .designers-holder {
+    *zoom: 1; }
+  .designers-holder:before,
+  .designers-holder:after {
+    content: "";
     display: table; }
   .designers-holder:after {
     clear: both; }
+  .designers-holder h3 {
+    margin-left: 15px; }
 
 .single-designer {
   position: relative;
@@ -1020,3 +1042,95 @@ div.simpleTabsContent.currentTab {
     .single-designer .overlay-name-company h3 {
       margin: 0;
       padding: 0; }
+
+.primary-footer {
+  width: auto;
+  max-width: 1200px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  background-color: #fff;
+  text-align: center; }
+  .primary-footer {
+    *zoom: 1; }
+  .primary-footer:before,
+  .primary-footer:after {
+    content: "";
+    display: table; }
+  .primary-footer:after {
+    clear: both; }
+  .primary-footer > div {
+    background-color: #4b3263;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 20px; }
+  .primary-footer ul.fleft, .primary-footer ul.fright {
+    margin-top: 6px; }
+  .primary-footer ul li {
+    display: inline-block;
+    margin-right: 20px; }
+    .primary-footer ul li:first-child {
+      margin-left: 20px; }
+    .primary-footer ul li a {
+      color: #343434;
+      font-size: 13px; }
+      .primary-footer ul li a:hover {
+        color: #4b3263; }
+      .primary-footer ul li a.subscribe .fa {
+        margin-left: 5px; }
+      .primary-footer ul li a .fa {
+        color: rgba(52, 52, 52, 0.6); }
+  .primary-footer .copyright {
+    border-top: 2px solid #c0c0c0;
+    padding: 25px 0;
+    text-align: center;
+    display: block;
+    margin-top: 65px;
+    font-size: 12px; }
+
+.products {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 60px;
+  z-index: 999; }
+
+.products-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center; }
+  .products-nav li {
+    display: inline;
+    margin-left: 15px; }
+    .products-nav li a {
+      display: inline-block;
+      padding: 0;
+      transition: all 0.2s ease-in-out; }
+      .products-nav li a span {
+        background-color: rgba(75, 50, 99, 0.8);
+        padding: 5px;
+        display: block;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 12px;
+        visibility: hidden; }
+      .products-nav li a img {
+        padding: 3px;
+        background-color: #fff;
+        width: 115px;
+        height: 115px; }
+      .products-nav li a:hover {
+        -webkit-transform: scale(1.1);
+                transform: scale(1.1); }
+        .products-nav li a:hover span {
+          visibility: visible; }
+
+.designer-slider .bx-wrapper .bx-prev {
+  left: -21px; }
+
+.designer-slider .bx-wrapper .bx-next {
+  right: -21px; }

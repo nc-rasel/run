@@ -2,15 +2,15 @@
 
 @import "normalize";
 @import "var";
+@import "colors";
 @import "base";
 @import "jquery.bxslider";
-@import "colors";
 @import "tab";
 @import "nav";
 
 
 .helper-viewport {
-  color: #fff;
+  color: $white;
 }
 .container-fluid {
   @include center(1200px, 20px);
@@ -29,6 +29,7 @@
 .collections-holder {
   @include center(1200px, 14px);
   background-color: $white;
+  padding-bottom: 5px;
   .primary {
     // @include span(2/3);
     float: left;
@@ -45,7 +46,6 @@
       float: left;
       width: 395px;
       position: relative;
-      
       @include tablet {
         width: 360px;
       }
@@ -117,7 +117,7 @@
 .title, .sub-title {
 	display: inline-block;
 	float: left;
-	color: #fff;
+	color: $white;
 	font-weight: 100;
 	font-size: 46px;
 	margin: 15px;
@@ -135,6 +135,9 @@
   @include center(1200px);
   background: linear-gradient(to right, #29232f, #27202d, #140c1c);
   padding-bottom: 20px;
+  h3 {
+    margin-left: 15px;
+  }
 }
 .single-designer {
   position: relative;
@@ -146,7 +149,7 @@
     right: 0;
     background-color: rgba($jetblack, 0.5);
     text-align: center;
-    color: #fff;
+    color: $white;
     padding: 10px 0;
     h3 {
       margin: 0;
@@ -154,3 +157,102 @@
     }
   }
 }
+
+
+.primary-footer {
+  @include center(1200px);
+  background-color: $white;
+  text-align: center;
+  > div {
+    background-color: $brand-color;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 20px;
+  }
+  ul.fleft, ul.fright {
+    margin-top: 6px;
+  }
+  ul li {
+    display: inline-block;
+    margin-right: 20px;
+    &:first-child {
+      margin-left: 20px;
+    }
+    a {
+      color: $black;
+      font-size: 13px;
+      &:hover {
+        color: $brand-color;
+      }
+      &.subscribe .fa {
+        margin-left: 5px;
+      }
+      & .fa {
+        color: rgba($black, 0.6);
+      }
+    }
+  }
+  .copyright {
+    border-top: 2px solid #c0c0c0;
+    padding: 25px 0;
+    text-align: center;
+    display: block;
+    margin-top: 65px;
+    font-size: 12px;
+  }
+}
+.products {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 60px;
+  z-index: 999;
+}
+.products-nav {
+  list-style: none;
+  margin:0;
+  padding:0;
+  text-align:center;
+  li {
+    display: inline;
+    margin-left: 15px;
+    a {
+      display:inline-block;
+      padding: 0;
+      transition: all .2s ease-in-out;
+      span {
+        background-color: rgba($brand-color, 0.8);
+        padding: 5px;
+        display: block;
+        color: $white;
+        text-transform: uppercase;
+        font-size: 12px;
+        visibility: hidden;
+      }
+      img {
+        padding: 3px;
+        background-color: $white;
+        width: 115px;
+        height: 115px;
+      }
+      &:hover {
+        transform: scale(1.1);
+        span {
+          visibility: visible;
+        }
+      }
+    }
+  }
+}
+
+.designer-slider {
+
+  .bx-wrapper .bx-prev {
+    left: -21px;
+  }
+
+  .bx-wrapper .bx-next {
+    right: -21px;
+  }
+}
+
