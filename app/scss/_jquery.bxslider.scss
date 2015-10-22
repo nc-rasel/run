@@ -97,12 +97,12 @@
 /* DIRECTION CONTROLS (NEXT / PREV) */
 
 .bx-wrapper .bx-prev {
-	left: -1px;
+	left: 0;
 	background: url('../images/left-arrow.png') no-repeat 0 0;
 }
 
 .bx-wrapper .bx-next {
-	right: -1px;
+	right: 0;
 	background: url('../images/right-arrow.png') no-repeat 0 0;
 }
 
@@ -120,7 +120,7 @@
 	margin-top: -86px;
 	outline: 0;
 	text-indent: -9999px;
-	z-index: 9999;
+	z-index: 1040;
 	width: 49px;
 	height: 172px;
 	background-color: rgba($control-color, 0.9);

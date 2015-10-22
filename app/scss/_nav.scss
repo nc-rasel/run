@@ -1,10 +1,10 @@
 .navbar {
   display: block;
   width: 100%;
-  position: fixed;
+  // position: fixed;
   top: 0;
   left: 0;
-  z-index: 1001;
+  z-index: 9999;
   color: #fff;
 
   &[role="navigation"] {

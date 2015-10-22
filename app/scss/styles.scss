@@ -1,9 +1,11 @@
 @import '../../bower_components/jeet/scss/jeet/index';
 
 @import "normalize";
+@import "fontawesome";
 @import "var";
 @import "colors";
 @import "base";
+@import "modal";
 @import "jquery.bxslider";
 @import "tab";
 @import "nav";
@@ -31,7 +33,6 @@
   background-color: $white;
   padding-bottom: 5px;
   .primary {
-    // @include span(2/3);
     float: left;
     clear: none;
     text-align: inherit;
@@ -73,8 +74,20 @@
     text-align: inherit;
     width: 354px;
     margin: 0;
+    @include tablet {
+      width: 100%;
+      float: none;
+    }
     ul li {
       position: relative;
+      @include tablet {
+        @include col(1/3, $gutter: 1.6, $cycle: 3);
+        // &.off-mobile {
+        //   display: none;
+        //   clear: inherit;
+        // }
+      }
+
       a {
         overflow: hidden;
         display: inline-block;
@@ -118,12 +131,13 @@
 	display: inline-block;
 	float: left;
 	color: $white;
-	font-weight: 100;
+	font-weight: 200;
 	font-size: 46px;
 	margin: 15px;
 	padding: 0;
 	margin-left: 0;
 	text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 .sub-title {
 	float: right;
@@ -190,6 +204,31 @@
       & .fa {
         color: rgba($black, 0.6);
       }
+      &.facebook:hover {
+        .fa {
+          color: $facebook;
+        }
+      }
+      &.twitter:hover {
+        .fa {
+          color: $twitter;
+        }
+      }
+      &.pinterest:hover {
+        .fa {
+          color: $pinterest; 
+        }
+      }
+      &.googleplus:hover {
+        .fa {
+          color: $googleplus;
+        }
+      }
+      &.tumblr:hover {
+        .fa {
+          color: $tumblr;
+        }
+      }
     }
   }
   .copyright {
@@ -246,11 +285,9 @@
 }
 
 .designer-slider {
-
   .bx-wrapper .bx-prev {
     left: -21px;
   }
-
   .bx-wrapper .bx-next {
     right: -21px;
   }

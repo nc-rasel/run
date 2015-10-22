@@ -2,7 +2,7 @@
 <!--
   runway.com
   v1
-  Written by S.M Rasel Mahamud (rasel.me)
+  Written by S.M Rasel Mahamud (Creative Director | rasel.me | rasel.rony@sekai-lab-bd.com)
 -->
 <html lang="en">
 <head>
@@ -13,15 +13,15 @@
   <!-- The title of this page -->
   <title>Runway</title>
   <!-- stylesheets -->
-  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700,600,300italic' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200,700,600,300italic' rel='stylesheet' type='text/css'>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="css/styles.min.css">
 
-  <!-- Essential javascripts -->
-  <script type="text/javascript" src="/js/simpletabs_1.3.js"></script>
-  <script type="text/javascript"src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-  <script type="text/javascript" src="/js/vendor/jquery.fitvids1.1.js"></script>
-  <script type="text/javascript" src="/js/vendor/jquery.bxslider.js"></script>
+<!--   Essential javascripts
+<script type="text/javascript" src="/js/simpletabs_1.3.js"></script>
+<script type="text/javascript"src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript" src="/js/vendor/jquery.fitvids1.1.js"></script>
+<script type="text/javascript" src="/js/vendor/jquery.bxslider.js"></script> -->
 </head>
 
 <!-- Our app starts here -->
@@ -46,7 +46,7 @@
           <a href="#" class="item">Shows</a>
         </span>
         <span role="secondary-nav">
-          <a href="#" class="item">Search <i class="fa fa-search"></i></a>
+          <a href="#" class="item open-popup">Search <i class="fa fa-search"></i></a>
           <a href="#" class="item">Sign in</a>
           <a href="#" class="item">Register</a>
           <a href="#" class="item">Wishlist <span>(0)</span></a>
@@ -125,7 +125,7 @@
   </div>
   <div class="secondary">
     <ul>
-      <li>
+      <li class="off-mobile">
         <a href="javascript:;" title="">
           <img src="images/ad-box.png" alt="" />
         </a>
@@ -153,7 +153,7 @@
     <ul class="designer">
       <li>
         <a href="javascript:;" class="single-designer">
-          <img src="/images/d1.png" />
+          <img src="/images/d1.png" class="notresponsive" />
           <div class="overlay-name-company">
             <h3>Name</h3>
             <span>Company Name</span>
@@ -162,7 +162,7 @@
       </li>
       <li>
         <a href="javascript:;" class="single-designer">
-          <img src="/images/d2.png" />
+          <img src="/images/d2.png" class="notresponsive" />
           <div class="overlay-name-company">
             <h3>Name</h3>
             <span>Company Name</span>
@@ -171,7 +171,7 @@
       </li>
       <li>
         <a href="javascript:;" class="single-designer">
-          <img src="/images/d3.png" />
+          <img src="/images/d3.png" class="notresponsive" />
           <div class="overlay-name-company">
             <h3>Name</h3>
             <span>Company Name</span>
@@ -180,7 +180,7 @@
       </li>
       <li>
         <a href="javascript:;" class="single-designer">
-          <img src="/images/d4.png" />
+          <img src="/images/d4.png" class="notresponsive" />
           <div class="overlay-name-company">
             <h3>Name</h3>
             <span>Company Name</span>
@@ -189,7 +189,7 @@
       </li>
       <li>
         <a href="javascript:;" class="single-designer">
-          <img src="/images/d5.png" />
+          <img src="/images/d5.png" class="notresponsive" />
           <div class="overlay-name-company">
             <h3>Name</h3>
             <span>Company Name</span>
@@ -198,7 +198,7 @@
       </li>
       <li>
         <a href="javascript:;" class="single-designer">
-          <img src="/images/d1.png" />
+          <img src="/images/d1.png" class="notresponsive" />
           <div class="overlay-name-company">
             <h3>Name</h3>
             <span>Company Name</span>
@@ -207,7 +207,7 @@
       </li>
       <li>
         <a href="javascript:;" class="single-designer">
-          <img src="/images/d2.png" />
+          <img src="/images/d2.png" class="notresponsive" />
           <div class="overlay-name-company">
             <h3>Name</h3>
             <span>Company Name</span>
@@ -216,7 +216,7 @@
       </li>
       <li>
         <a href="javascript:;" class="single-designer">
-          <img src="/images/d3.png" />
+          <img src="/images/d3.png" class="notresponsive" />
           <div class="overlay-name-company">
             <h3>Name</h3>
             <span>Company Name</span>
@@ -225,7 +225,7 @@
       </li>
       <li>
         <a href="javascript:;" class="single-designer">
-          <img src="/images/d4.png" />
+          <img src="/images/d4.png" class="notresponsive" />
           <div class="overlay-name-company">
             <h3>Name</h3>
             <span>Company Name</span>
@@ -234,7 +234,7 @@
       </li>
       <li>
         <a href="javascript:;" class="single-designer">
-          <img src="/images/d5.png" />
+          <img src="/images/d5.png" class="notresponsive" />
           <div class="overlay-name-company">
             <h3>Name</h3>
             <span>Company Name</span>
@@ -294,23 +294,47 @@
     </ul>
     <ul class="fright">
       <li><a href="javascript:;" class="subscribe" title="Subscribe">SUBSCRIBE <i class="fa fa-envelope-o"></i></a></li>
-      <li><a href="javascript:;" title="facebook"><i class="fa fa-facebook"></i></a></li>
-      <li><a href="javascript:;" title="twitter"><i class="fa fa-twitter"></i></a></li>
-      <li><a href="javascript:;" title="pinterest"><i class="fa fa-pinterest"></i></a></li>
-      <li><a href="javascript:;" title="google-plus"><i class="fa fa-google-plus"></i></a></li>
-      <li><a href="javascript:;" title="tumblr"><i class="fa fa-tumblr"></i></a></li>
+      <li><a href="javascript:;" class="facebook" title="facebook"><i class="fa fa-facebook"></i></a></li>
+      <li><a href="javascript:;" class="twitter" title="twitter"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="javascript:;" class="pinterest" title="pinterest"><i class="fa fa-pinterest"></i></a></li>
+      <li><a href="javascript:;" class="googleplus" title="google-plus"><i class="fa fa-google-plus"></i></a></li>
+      <li><a href="javascript:;" class="tumblr" title="tumblr"><i class="fa fa-tumblr"></i></a></li>
     </ul>
     <span class="copyright">
       <p>&copy; 2015 Runway.Moda Pte Ltd. All Rights Reserved.</p>
     </span>
 </div>
 
-
+<div id="test-popup" class="white-popup mfp-hide">
+  Popup content
+</div>
+  <!-- Essential javascripts -->
+  <script type="text/javascript"src="/js/vendor/jquery.min.js"></script>
+  <script src="/js/vendor/jquery.magnific-popup.js"></script>
+  <script type="text/javascript" src="/js/vendor/jquery.fitvids1.1.js"></script>
+  <script type="text/javascript" src="/js/vendor/jquery.bxslider.js"></script>
 
 
 <script type="text/javascript">
  $(document).ready(function(e) {
-   showViewportSize();
+   //showViewportSize();
+
+    $('.open-popup-link').magnificPopup({
+      type:'inline',
+      midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
+    });
+
+    // Example: 2 Dynamically created
+    $('.open-popup').magnificPopup({
+      items: {
+        src: '<div class="white-popup">Dynamically created popup</div>',
+        type: 'inline'
+      },
+      closeBtnInside: true
+    });
+  
+
+
   //  slider
   $('.bxslider').bxSlider({
     video: true,
@@ -328,16 +352,21 @@
     pager: false,
     moveSlides: 1
   });
+
+
+  
+  
+
  });
- $(window).resize(function(e) {
-   showViewportSize();
- });
- function showViewportSize() {
-   var the_width = $(window).width();
-   var the_height = $(window).height();
-   $('#width').text(the_width);
-   $('#height').text(the_height);
- }
+ // $(window).resize(function(e) {
+ //   showViewportSize();
+ // });
+ // function showViewportSize() {
+ //   var the_width = $(window).width();
+ //   var the_height = $(window).height();
+ //   $('#width').text(the_width);
+ //   $('#height').text(the_height);
+ // }
 </script>
 
 
