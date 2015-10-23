@@ -2385,6 +2385,19 @@ table {
 .fa-fonticons:before {
   content: "\f280"; }
 
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.cf:after {
+  clear: both; }
+
+.cf {
+  *zoom: 1; }
+
 ::-moz-selection {
   background: #4a4d88;
   color: #f4f1de; }
@@ -2429,11 +2442,11 @@ a {
   left: 10px;
   z-index: 99999; }
 
-p, ul, li {
+p, ul, li, ol {
   margin: 0;
   padding: 0; }
 
-ul li {
+ul li, ol li {
   list-style: none; }
 
 img:not(.notresponsive) {
@@ -3200,7 +3213,7 @@ div.simpleTabsContent.currentTab {
     *zoom: 1; }
   .container-fluid:before,
   .container-fluid:after {
-    content: "";
+    content: " ";
     display: table; }
   .container-fluid:after {
     clear: both; }
@@ -3219,7 +3232,7 @@ div.simpleTabsContent.currentTab {
     *zoom: 1; }
   .hero-area-slider:before,
   .hero-area-slider:after {
-    content: "";
+    content: " ";
     display: table; }
   .hero-area-slider:after {
     clear: both; }
@@ -3239,7 +3252,7 @@ div.simpleTabsContent.currentTab {
     *zoom: 1; }
   .ad-placholder:before,
   .ad-placholder:after {
-    content: "";
+    content: " ";
     display: table; }
   .ad-placholder:after {
     clear: both; }
@@ -3259,7 +3272,7 @@ div.simpleTabsContent.currentTab {
     *zoom: 1; }
   .collections-holder:before,
   .collections-holder:after {
-    content: "";
+    content: " ";
     display: table; }
   .collections-holder:after {
     clear: both; }
@@ -3318,7 +3331,7 @@ div.simpleTabsContent.currentTab {
             *zoom: 1; }
           .collections-holder .secondary ul li:before,
           .collections-holder .secondary ul li:after {
-            content: "";
+            content: " ";
             display: table; }
           .collections-holder .secondary ul li:after {
             clear: both; }
@@ -3358,7 +3371,7 @@ div.simpleTabsContent.currentTab {
     *zoom: 1; }
   .shows:before,
   .shows:after {
-    content: "";
+    content: " ";
     display: table; }
   .shows:after {
     clear: both; }
@@ -3375,7 +3388,7 @@ div.simpleTabsContent.currentTab {
       *zoom: 1; }
     .shows ul li:before,
     .shows ul li:after {
-      content: "";
+      content: " ";
       display: table; }
     .shows ul li:after {
       clear: both; }
@@ -3422,7 +3435,7 @@ div.simpleTabsContent.currentTab {
     *zoom: 1; }
   .designers-holder:before,
   .designers-holder:after {
-    content: "";
+    content: " ";
     display: table; }
   .designers-holder:after {
     clear: both; }
@@ -3460,7 +3473,7 @@ div.simpleTabsContent.currentTab {
     *zoom: 1; }
   .primary-footer:before,
   .primary-footer:after {
-    content: "";
+    content: " ";
     display: table; }
   .primary-footer:after {
     clear: both; }
@@ -3612,3 +3625,72 @@ div.simpleTabsContent.currentTab {
 .mfp-close.custom-btn {
   position: initial;
   background-color: #38495a; }
+
+.shows.featured-related-holder .sub-title {
+  margin-right: 114px;
+  color: #7e3f97; }
+
+.featured-related-holder {
+  width: auto;
+  max-width: 1200px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 14px;
+  padding-right: 14px;
+  background-color: #fff; }
+  .featured-related-holder {
+    *zoom: 1; }
+  .featured-related-holder:before,
+  .featured-related-holder:after {
+    content: " ";
+    display: table; }
+  .featured-related-holder:after {
+    clear: both; }
+
+.featured {
+  float: left;
+  clear: none;
+  width: 942px;
+  margin-right: 0;
+  text-align: inherit;
+  margin-left: 0; }
+  .featured ol li {
+    position: relative;
+    width: 457px;
+    height: 262px;
+    float: left;
+    margin-bottom: 14px; }
+    .featured ol li img {
+      height: 100%; }
+    .featured ol li:nth-child(odd) {
+      margin-right: 14px; }
+
+.related {
+  float: left;
+  clear: none;
+  width: 230px;
+  margin-right: 0;
+  text-align: inherit;
+  margin-left: 0;
+  padding-left: 0; }
+  .related ol li {
+    position: relative;
+    width: 100%;
+    height: 124px;
+    margin-bottom: 14px; }
+    .related ol li:last-child {
+      margin-bottom: 0; }
+    .related ol li img {
+      height: 100%; }
+  .related .over-info {
+    font-size: 12px;
+    padding: 10px;
+    bottom: 10px; }
+  .related .play-btn {
+    width: 32px;
+    height: 32px;
+    right: 10px;
+    bottom: 10px;
+    background-size: 40%; }

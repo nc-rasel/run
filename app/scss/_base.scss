@@ -94,11 +94,11 @@ a {
   left: 10px;
   z-index: 99999;
 }
-p, ul, li {
+p, ul, li, ol {
   margin:0;
   padding: 0;
 }
-ul li {
+ul li, ol li {
   list-style: none;
 }
 img:not(.notresponsive) {

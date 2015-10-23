@@ -22,10 +22,24 @@ $desktop-width: 1024px;
   }
   &:before,
   &:after {
-      content: "";
+      content: " ";
       display: table;
   }
   &:after {
       clear: both;
   }
+}
+
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+    *zoom: 1;
 }
