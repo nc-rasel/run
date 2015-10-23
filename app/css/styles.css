@@ -3584,6 +3584,8 @@ div.simpleTabsContent.currentTab {
       color: #9ca8b1;
       font-size: 13px;
       font-weight: 700; }
+      .white-popup.subscribe form p.error {
+        color: #e76878; }
     .white-popup.subscribe form input[type="submit"] {
       padding: 5px 10px;
       border-radius: 2px;

@@ -334,6 +334,9 @@
       color: #9ca8b1;
       font-size: 13px;
       font-weight: 700;
+      &.error {
+        color: #e76878;
+      }
     }
     input[type="submit"] {
       padding: 5px 10px;
