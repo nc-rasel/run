@@ -293,20 +293,29 @@
       </li>
     </ul>
     <ul class="fright">
-      <li><a href="javascript:;" class="subscribe" title="Subscribe">SUBSCRIBE <i class="fa fa-envelope-o"></i></a></li>
-      <li><a href="javascript:;" class="facebook" title="facebook"><i class="fa fa-facebook"></i></a></li>
-      <li><a href="javascript:;" class="twitter" title="twitter"><i class="fa fa-twitter"></i></a></li>
-      <li><a href="javascript:;" class="pinterest" title="pinterest"><i class="fa fa-pinterest"></i></a></li>
-      <li><a href="javascript:;" class="googleplus" title="google-plus"><i class="fa fa-google-plus"></i></a></li>
-      <li><a href="javascript:;" class="tumblr" title="tumblr"><i class="fa fa-tumblr"></i></a></li>
+      <li><a href="#test-popup" data-effect="mfp-zoom-in" class="subscribe open-popup-link" title="Subscribe">SUBSCRIBE <i class="fa fa-envelope-o"></i></a></li>
+      <li><a href="javascript:;" class="facebook" title="facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+      <li><a href="javascript:;" class="twitter" title="twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="javascript:;" class="pinterest" title="pinterest" target="_blank"><i class="fa fa-pinterest"></i></a></li>
+      <li><a href="javascript:;" class="googleplus" title="google-plus" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+      <li><a href="javascript:;" class="tumblr" title="tumblr" target="_blank"><i class="fa fa-tumblr"></i></a></li>
     </ul>
     <span class="copyright">
       <p>&copy; 2015 Runway.Moda Pte Ltd. All Rights Reserved.</p>
     </span>
 </div>
 
-<div id="test-popup" class="white-popup mfp-hide">
-  Popup content
+<div id="test-popup" class="white-popup mfp-with-anim mfp-hide subscribe">
+  <h3>Subscribe to Runway Newsletter!</h3>
+  <form action="">
+    <input type="text" name="" placeholder="Your Email Address...">
+    <i class="fa fa-paper-plane"></i>
+    <p>Subscribe to our weekly newsletter to receive the latest in your box!</p>
+    
+    <a href="javascript:;" title="Close (Esc)" class="mfp-close custom-btn">No, Thank.</a>
+    <input type="submit" name="subscribe-submit" id="subscribe-submit" class="" value="Subscribe!">
+    
+  </form>
 </div>
   <!-- Essential javascripts -->
   <script type="text/javascript"src="/js/vendor/jquery.min.js"></script>
@@ -321,14 +330,29 @@
 
     $('.open-popup-link').magnificPopup({
       type:'inline',
-      midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
+      midClick: true, // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
+
+      removalDelay: 500, //delay removal by X to allow out-animation
+      callbacks: {
+        beforeOpen: function() {
+        this.st.mainClass = this.st.el.attr('data-effect');
+        }
+      },
+
+
     });
 
     // Example: 2 Dynamically created
     $('.open-popup').magnificPopup({
       items: {
-        src: '<div class="white-popup">Dynamically created popup</div>',
+        removalDelay: 300,
+        mainClass: 'mfp-fade',
+        src: '<div class="white-popup">' +
+        '<p>Dynamically created popup</p>' +
+        '<p>Rony</p>' +
+        '</div>',
         type: 'inline'
+        
       },
       closeBtnInside: true
     });
