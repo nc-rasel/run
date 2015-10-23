@@ -293,13 +293,14 @@
   }
 }
 
+// subscribe UI
 .white-popup.subscribe {
   border-radius:12px 12px 0 0;
   padding: 0;
   h3 {
     padding: 10px 15px 20px;
     background-color: #38495a;
-    background-image: url(../images/border.jpg);
+    background-image: url('../images/border.jpg');
     background-position: bottom;
     background-repeat: repeat-x;
     border-radius: 10px 10px 0 0;

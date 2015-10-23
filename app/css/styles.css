@@ -3181,6 +3181,9 @@ div.simpleTabsContent.currentTab {
       .navbar [role="secondary-nav"] .item:last-child {
         margin-right: 0; }
 
+.search .fa {
+  padding-left: 5px; }
+
 .helper-viewport {
   color: #fff; }
 
@@ -3550,7 +3553,7 @@ div.simpleTabsContent.currentTab {
   .white-popup.subscribe h3 {
     padding: 10px 15px 20px;
     background-color: #38495a;
-    background-image: url(../images/border.jpg);
+    background-image: url("../images/border.jpg");
     background-position: bottom;
     background-repeat: repeat-x;
     border-radius: 10px 10px 0 0;
