@@ -1,0 +1,29 @@
+// alert style
+
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.alert-info {
+  color: #31708f;
+  background-color: lighten($info, 30%);
+  border-color: #bce8f1;
+}
+.alert-warning {
+  color: #8a6d3b;
+  background-color: lighten($warning, 32%);
+  border-color: #faebcc;
+}
+.alert-danger {
+  color: #a94442;
+  background-color: lighten($danger, 35%);
+  border-color: #ebccd1;
+}
+.alert-success {
+  color: #3c763d;
+  background-color: lighten($success, 35%);
+  border-color: #d6e9c6;
+}

@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+.acco2 {
+  font-family: $primary-font;
+}
+.adCntnr .acco2 .expand {
+  line-height:28px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.adCntnr .acco2 .expand a {
+  outline: 0;
+  text-decoration:none;
+  &:after {
+    content: "";
+    font-family:'FontAwesome';
+    color: $white;
+    float: right;
+    font-size: 14px;
+  }
+}
+.adCntnr .acco2 .openAd a {
+  color: $white !important;
+  text-decoration:none;
+  &:after {
+    content: "";
+    font-family:'FontAwesome';
+    color: $white;
+    float: right;
+  }
+}
+
+.adCntnr .acco2 .openAd {
+  line-height:27px;
+}
+
+.adCntnr .acco2 .expand a{
+  color:#fff;
+}
+
+.adCntnr  .accCntnt {
+  border-bottom: 1px solid $brand-color;
+  border-top: 1px solid $brand-color;
+  padding: 8px 0;
+  margin: 5px 0;
+  a {
+    display: block;
+  }
+}
