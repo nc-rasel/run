@@ -151,3 +151,32 @@ img:not(.notresponsive) {
 .padding {
   padding: 14px;
 }
+
+.your-cart-at-aglance {
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 117px;
+  height: 43px; 
+  background-color: #74558e;
+  .bag {
+    background: #999 url('../images/bag-icon.png') no-repeat 50% 50%;
+    width: 34px;
+    height: 43px;
+    display: inline-block;
+    float: left;
+  }
+  .your-cart, .has {
+    font-size: 9px;
+    display: inline-block;
+    text-transform: uppercase;
+    color: $white;
+    margin-left: 10px;
+    font-weight: 300;
+  }
+  .your-cart {
+  }
+  .has {
+    border-bottom: 1px solid;
+  }
+}

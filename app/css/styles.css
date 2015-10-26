@@ -2496,6 +2496,29 @@ img:not(.notresponsive) {
 .padding {
   padding: 14px; }
 
+.your-cart-at-aglance {
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 117px;
+  height: 43px;
+  background-color: #74558e; }
+  .your-cart-at-aglance .bag {
+    background: #999 url("../images/bag-icon.png") no-repeat 50% 50%;
+    width: 34px;
+    height: 43px;
+    display: inline-block;
+    float: left; }
+  .your-cart-at-aglance .your-cart, .your-cart-at-aglance .has {
+    font-size: 9px;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #fff;
+    margin-left: 10px;
+    font-weight: 300; }
+  .your-cart-at-aglance .has {
+    border-bottom: 1px solid; }
+
 /* Magnific Popup CSS */
 .mfp-bg {
   top: 0;
@@ -3276,8 +3299,8 @@ div.simpleTabsContent.currentTab {
   z-index: 2;
   color: #fff;
   cursor: default;
-  background-color: #673483;
-  border-color: #673483; }
+  background-color: #7e3f97;
+  border-color: #7e3f97; }
 
 .pagination > .disabled > a, .pagination > .disabled > a:focus, .pagination > .disabled > a:hover, .pagination > .disabled > span, .pagination > .disabled > span:focus, .pagination > .disabled > span:hover {
   color: #777;
@@ -3345,8 +3368,8 @@ div.simpleTabsContent.currentTab {
   color: #fff; }
 
 .adCntnr .accCntnt {
-  border-bottom: 1px solid #673483;
-  border-top: 1px solid #673483;
+  border-bottom: 1px solid #7e3f97;
+  border-top: 1px solid #7e3f97;
   padding: 8px 0;
   margin: 5px 0; }
   .adCntnr .accCntnt a {
@@ -3503,9 +3526,9 @@ div.simpleTabsContent.currentTab {
   .designers-home:after {
     clear: both; }
   .designers-home .title {
-    color: #673483; }
+    color: #7e3f97; }
   .designers-home .three-fourth .pagination {
-    margin: 27px 0 0; }
+    margin: 21px 0 0; }
 
 .filter-column {
   *zoom: 1;
@@ -3604,7 +3627,7 @@ div.simpleTabsContent.currentTab {
       left: 0;
       bottom: -140px;
       right: 0;
-      background-color: rgba(0, 0, 0, 0.7);
+      background-color: rgba(52, 42, 61, 0.75);
       text-align: left;
       color: #fff;
       padding: 0;
@@ -3628,7 +3651,7 @@ div.simpleTabsContent.currentTab {
         line-height: 1.6;
         font-size: 16px; }
       .three-fourth ul li .overlay-name-company .view_detailed_profile {
-        background-color: rgba(103, 52, 131, 0.7);
+        background-color: rgba(126, 63, 151, 0.7);
         background-image: url("../images/right-arrow.png");
         background-position: 93% center;
         background-repeat: no-repeat;
@@ -3637,6 +3660,181 @@ div.simpleTabsContent.currentTab {
         color: #fff;
         padding: 20px 15px;
         font-family: 'Source Sans Pro',sans-serif; }
+
+/*  Syntax Quick Reference
+  --------------------------
+  column($ratios: 1, $offset: 0, $cycle: 0, $uncycle: 0, $gutter: $jeet-gutter)
+  span($ratio: 1, $offset: 0)
+  shift($ratios: 0, $col_or_span: column, $gutter: $jeet-gutter)
+  unshift()
+  edit()
+  center($max_width: 1410px, $pad: 0)
+  stack($pad: 0, $align: false)
+  unstack()
+  align($direction: both)
+  cf()
+*/
+/**
+ * Grid settings.
+ * All values are defaults and can therefore be easily overidden.
+ */
+/**
+ * List functions courtesy of the wonderful folks at Team Sass.
+ * Check out their awesome grid: Singularity.
+ */
+/**
+ * Get  percentage from a given ratio.
+ * @param {number} [$ratio=1] - The column ratio of the element.
+ * @returns {number} - The percentage value.
+ */
+/**
+ * Work out the column widths based on the ratio and gutter sizes.
+ * @param {number} [$ratios=1] - The column ratio of the element.
+ * @param {number} [$gutter=$jeet-gutter] - The gutter for the column.
+ * @returns {list} $width $gutter - A list containing the with and gutter for the element.
+ */
+/**
+ * Get the set layout direction for the project.
+ * @returns {string} $direction - The layout direction.
+ */
+/**
+ * Replace a specified list value with a new value (uses built in set-nth() if available)
+ * @param {list} $list - The list of values you want to alter.
+ * @param {number} $index - The index of the list item you want to replace.
+ * @param {*} $value - The value you want to replace $index with.
+ * @returns {list} $list - The list with the value replaced or removed.
+ * @warn if an invalid index is supplied.
+ */
+/**
+ * Reverse a list (progressively enhanced for Sass 3.3)
+ * @param {list} $list - The list of values you want to reverse.
+ * @returns {list} $result - The reversed list.
+ */
+/**
+ * Get the opposite direction to a given value.
+ * @param {string} $dir - The direction you want the opposite of.
+ * @returns {string} - The opposite direction to $dir.
+ * @warn if an incorrect string is provided.
+ */
+/**
+ * Style an element as a column with a gutter.
+ * @param {number} [$ratios=1] - A width relative to its container as a fraction.
+ * @param {number} [$offset=0] - A offset specified as a fraction (see $ratios).
+ * @param {number} [$cycle=0] - Easily create an nth column grid where $cycle equals the number of columns.
+ * @param {number} [$uncycle=0] - Undo a previous cycle value to allow for a new one.
+ * @param {number} [$gutter=$jeet-gutter] - Specify the gutter width as a percentage of the containers width.
+ */
+/**
+ * An alias for the column mixin.
+ * @param [$args...] - All arguments get passed through to column().
+ */
+/**
+ * Get the width of a column and nothing else.
+ * @param {number} [$ratios=1] - A width relative to its container as a fraction.
+ * @param {number} [$gutter=$jeet-gutter] - Specify the gutter width as a percentage of the containers width.
+ */
+/**
+ * Get the gutter size of a column and nothing else.
+ * @param {number} [ratios=1] - A width relative to its container as a fraction.
+ * @param {number} [gutter=jeet.gutter] - Specify the gutter width as a percentage of the containers width.
+ */
+/**
+ * An alias for the column-width function.
+ * @param [$args...] - All arguments get passed through to column().
+ */
+/**
+ * An alias for the column-gutter function.
+ * @param [$args...] - All arguments get passed through to column().
+ */
+/**
+ * Style an element as a column without any gutters for a seamless row.
+ * @param {number} [$ratios=1] - A width relative to its container as a fraction.
+ * @param {number} [$offset=0] - A offset specified as a fraction (see $ratios).
+ * @param {number} [cycle=0] - Easily create an nth column grid where cycle equals the number of columns.
+ * @param {number} [uncycle=0] - Undo a previous cycle value to allow for a new one.
+ */
+/**
+ * Reorder columns without altering the HTML.
+ * @param {number} [$ratios=0] - Specify how far along you want the element to move.
+ * @param {string} [$col-or-span=column] - Specify whether the element has a gutter or not.
+ * @param {number} [$gutter=$jeet-gutter] - Specify the gutter width as a percentage of the containers width.
+ */
+/**
+ * Reset an element that has had shift() applied to it.
+ */
+/**
+ * View the grid and its layers for easy debugging.
+ * @param {string} [$color=black] - The background tint applied.
+ * @param {boolean} [$important=false] - Whether to apply the style as !important.
+ */
+/**
+ *  Alias for edit().
+ */
+/**
+ * Horizontally center an element.
+ * @param {number} [$max-width=1410px] - The max width the element can be.
+ * @param {number} [$pad=0] - Specify the element's left and right padding.
+ */
+/**
+ * Uncenter an element.
+ */
+/**
+ * Stack an element so that nothing is either side of it.
+ * @param {number} [$pad=0] - Specify the element's left and right padding.
+ * @param {boolean/string} [$align=false] - Specify the text align for the element.
+ */
+/**
+ * Unstack an element.
+ */
+/**
+ * Center an element on either or both axes.
+ * @requires A parent container with relative positioning.
+ * @param {string} [$direction=both] - Specify which axes to center the element on.
+ */
+/**
+ * Apply a clearfix to an element.
+ */
+.wishlist-home {
+  *zoom: 1;
+  width: auto;
+  max-width: 1200px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-bottom: 14px;
+  background-color: #fff;
+  position: relative; }
+  .wishlist-home:before, .wishlist-home:after {
+    content: '';
+    display: table; }
+  .wishlist-home:after {
+    clear: both; }
+  .wishlist-home .title {
+    color: #7e3f97; }
+  .wishlist-home .three-fourth ul li {
+    *zoom: 1;
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 32.4%;
+    margin-left: 0%;
+    margin-right: 1.4%;
+    margin-bottom: 14px; }
+    .wishlist-home .three-fourth ul li:before, .wishlist-home .three-fourth ul li:after {
+      content: '';
+      display: table; }
+    .wishlist-home .three-fourth ul li:after {
+      clear: both; }
+    .wishlist-home .three-fourth ul li:nth-child(3n) {
+      margin-right: 0%;
+      float: right; }
+    .wishlist-home .three-fourth ul li:nth-child(3n + 1) {
+      clear: both; }
+  .wishlist-home .you_might_like li {
+    margin-bottom: 0 !important; }
 
 .helper-viewport {
   color: #fff; }
@@ -3857,6 +4055,10 @@ div.simpleTabsContent.currentTab {
   font-size: 32px;
   margin-top: 24px; }
 
+.title span {
+  font-size: 22px;
+  color: #999; }
+
 .designers-holder {
   *zoom: 1;
   width: auto;
@@ -3911,10 +4113,20 @@ div.simpleTabsContent.currentTab {
   .primary-footer:after {
     clear: both; }
   .primary-footer > div {
-    background-color: #673483;
     text-align: center;
     padding: 10px 0;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    background: #4d3264;
+    /* Old browsers */
+    /* FF3.6+ */
+    /* Chrome,Safari4+ */
+    /* Chrome10+,Safari5.1+ */
+    /* Opera 11.10+ */
+    /* IE10+ */
+    background: linear-gradient(45deg, #4d3264 0%, #351e4a 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d3264', endColorstr='#351e4a',GradientType=1 );
+    /* IE6-9 fallback on horizontal gradient */ }
   .primary-footer ul.fleft, .primary-footer ul.fright {
     margin-top: 6px; }
   .primary-footer ul li {
@@ -3926,7 +4138,7 @@ div.simpleTabsContent.currentTab {
       color: #343434;
       font-size: 13px; }
       .primary-footer ul li a:hover {
-        color: #673483; }
+        color: #7e3f97; }
       .primary-footer ul li a.subscribe .fa {
         margin-left: 5px; }
       .primary-footer ul li a .fa {
@@ -3969,7 +4181,7 @@ div.simpleTabsContent.currentTab {
       padding: 0;
       transition: all 0.2s ease-in-out; }
       .products-nav li a span {
-        background-color: rgba(103, 52, 131, 0.8);
+        background-color: rgba(126, 63, 151, 0.8);
         padding: 5px;
         display: block;
         color: #fff;
@@ -3998,7 +4210,7 @@ div.simpleTabsContent.currentTab {
   padding: 0; }
   .white-popup.subscribe h3 {
     padding: 10px 15px 20px;
-    background-color: #673483;
+    background-color: #7e3f97;
     background-image: url("../images/border.jpg");
     background-position: bottom;
     background-repeat: repeat-x;
@@ -4025,9 +4237,9 @@ div.simpleTabsContent.currentTab {
         font-size: 18px;
         left: 10px; }
       .white-popup.subscribe form input[type="text"]:focus {
-        border: 1px solid rgba(103, 52, 131, 0.7); }
+        border: 1px solid rgba(126, 63, 151, 0.7); }
         .white-popup.subscribe form input[type="text"]:focus + .fa-paper-plane {
-          color: rgba(103, 52, 131, 0.7); }
+          color: rgba(126, 63, 151, 0.7); }
     .white-popup.subscribe form p {
       margin: -15px 0 0;
       padding: 0 0 20px;

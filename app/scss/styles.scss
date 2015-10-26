@@ -13,6 +13,7 @@
 @import "pagination";
 @import "accordion";
 @import "designers-home";
+@import "wishlist-home";
 
 
 .helper-viewport {
@@ -161,6 +162,13 @@
 	font-size: 32px;
 	margin-top: 24px;
 }
+
+.title {
+  span {
+    font-size: 22px;
+    color: #999;
+  }
+}
 .designers-holder {
   @include center(1200px);
   background: linear-gradient(to right, #29232f, #27202d, #140c1c);
@@ -194,10 +202,17 @@
   background-color: $white;
   text-align: center;
   > div {
-    background-color: $brand-color;
     text-align: center;
     padding: 10px 0;
     margin-bottom: 20px;
+    background: #4d3264; /* Old browsers */
+    background: -moz-linear-gradient(45deg,  #4d3264 0%, #351e4a 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#4d3264), color-stop(100%,#351e4a)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(45deg,  #4d3264 0%,#351e4a 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(45deg,  #4d3264 0%,#351e4a 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(45deg,  #4d3264 0%,#351e4a 100%); /* IE10+ */
+    background: linear-gradient(45deg,  #4d3264 0%,#351e4a 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d3264', endColorstr='#351e4a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
   }
   ul.fleft, ul.fright {
     margin-top: 6px;

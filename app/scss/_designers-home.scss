@@ -9,7 +9,7 @@
   }
   .three-fourth {
     .pagination {
-      margin: 27px 0 0;
+      margin: 21px 0 0;
     }
   }
 }
@@ -79,7 +79,7 @@
       left: 0;
       bottom: -140px;
       right: 0;
-      background-color: rgba($jetblack, 0.7);
+      background-color: rgba($brand-color-overlay, 0.75);
       text-align: left;
       color: $white;
       padding: 0;
