@@ -396,7 +396,8 @@ select {
  *    `input` and others.
  */
 button,
-html input[type="button"], input[type="reset"],
+html input[type="button"],
+input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
@@ -527,8 +528,8 @@ table {
   left: -1.85714286em; }
 
 .fa-border {
-  padding: 0.2em 0.25em 0.15em;
-  border: solid 0.08em #eee;
+  padding: .2em .25em .15em;
+  border: solid .08em #eee;
   border-radius: .1em; }
 
 .fa-pull-left {
@@ -4179,7 +4180,7 @@ div.simpleTabsContent.currentTab {
     .products-nav li a {
       display: inline-block;
       padding: 0;
-      transition: all 0.2s ease-in-out; }
+      transition: all .2s ease-in-out; }
       .products-nav li a span {
         background-color: rgba(126, 63, 151, 0.8);
         padding: 5px;
