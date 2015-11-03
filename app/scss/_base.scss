@@ -20,7 +20,7 @@
 //   vertical-align: baseline;
 // }
 
-// article, aside, details, figcaption, figure, 
+// article, aside, details, figcaption, figure,
 // footer, header, hgroup, menu, nav, section {
 //   display: block;
 // }
@@ -58,13 +58,13 @@ html {
 }
 // @include edit;
 
-
-
 body {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   padding-top: 0;
   background-color: #282828;
   font-weight: 300;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
 }
 a {
   text-decoration: none;
@@ -74,6 +74,12 @@ a {
   -o-transition: all 0.15s ease-out;
   -ms-transition: all 0.15s ease-out;
   transition: all 0.15s ease-out;
+}
+a.active, .a:active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+  box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
 }
 .fright {
   float: right;
@@ -151,7 +157,49 @@ img:not(.notresponsive) {
 .padding {
   padding: 14px;
 }
-
+.tab_content_area {
+  margin: 10px 0 0;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 2px;
+}
+.person {
+  display: inline-block;
+  margin: 0 0 5px 5px;
+  color: $brand-color-purple;
+  span {
+    border-bottom: 1px solid lighten($jetblack, 90%)
+  }
+  &:hover {
+    color: $jetblack;
+    span {
+      border-bottom: 1px solid blue;
+    }
+  }
+  &:after {
+    content: " ,";
+  }
+  &:last-child:after {
+    content: "";
+  }
+}
+.thumnail {
+  vertical-align: middle;
+  border-radius: 100%;
+  margin-right: 5px;
+  &.small {
+    width: 16px;
+    height: 16px;
+  }
+  &.medium {
+    width: 32px;
+    height: 32px;
+  }
+  &.default {
+    width: 64px;
+    height: 64px;
+  }
+}
 .your-cart-at-aglance {
   position: absolute;
   top: 18px;
@@ -178,5 +226,29 @@ img:not(.notresponsive) {
   }
   .has {
     border-bottom: 1px solid;
+  }
+}
+
+.transition {
+  -webkit-transition: all 125ms linear;
+  -moz-transition: all 125ms linear;
+  -o-transition: all 125ms linear;
+  -ms-transition: all 125ms linear;
+  transition: all 125ms linear
+}
+
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis
+}
+
+.column-inner-title {
+  .title {
+    margin: -2px 0 10px 0;
+    font-size: 32px;
+    &.big {
+      font-size: 46px;
+    }
   }
 }

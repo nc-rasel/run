@@ -9,7 +9,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var browserSync = require('browser-sync');
 
 // Gulp Sass Task 
-/*
+
 gulp.task('sass', function() {
   gulp.src('./scss/{,*!/}*.{scss,sass}')
     .pipe(sourcemaps.init())
@@ -19,7 +19,7 @@ gulp.task('sass', function() {
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('./css'));
 })
-*/
+
 
 // Start browserSync server
 gulp.task('browserSync', function() {

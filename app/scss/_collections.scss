@@ -1,0 +1,44 @@
+.collection-home {
+  .action-item {
+    text-transform: uppercase;
+    color: $white;
+    &:last-child {
+      float: right;
+      &:after {
+        content: "+";
+        position: relative;
+        left: -14px;
+        color: $jetblack;
+        font-size: 12px;
+        top: -3px;
+      }
+    }
+  }
+  .three-fourth ul li {
+    .overlay-name-company {
+      bottom: -50px;
+    }
+    &:hover {
+      .overlay-name-company {
+        bottom: 0;
+      }
+    }
+  }
+}
+.collections {
+  .single-item {
+    &:hover, &.active {
+      .overlay-name-company {
+        background-color: rgba($brand-color, .9) !important;
+      }
+    }
+  }
+  .overlay-name-company {
+    h3 {
+      font-weight: 400;
+      font-size: 16px;
+      padding-left: 10px !important;
+      text-align: left;
+    }
+  }
+}

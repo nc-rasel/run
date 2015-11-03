@@ -6,343 +6,256 @@
 -->
 <html lang="en">
 <head>
-  <!-- What character encoding are we using? -->
   <meta charset="UTF-8">
-  <!-- Define the viewport for mobile, disable zooming -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-  <!-- The title of this page -->
   <title>Runway</title>
-  <!-- stylesheets -->
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200,700,600,300italic' rel='stylesheet' type='text/css'>
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> -->
   <link rel="stylesheet" href="css/styles.min.css">
-
-<!--   Essential javascripts
-<script type="text/javascript" src="/js/simpletabs_1.3.js"></script>
-<script type="text/javascript"src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-<script type="text/javascript" src="/js/vendor/jquery.fitvids1.1.js"></script>
-<script type="text/javascript" src="/js/vendor/jquery.bxslider.js"></script> -->
+  <script type="text/javascript" src="/js/vendor/modernizr-custom.js"></script>
+  <script type="text/javascript" src="/js/ejs_0.9_alpha_1_production.js"></script>
 </head>
 
-<!-- Our app starts here -->
 <body>
- <!-- view port helper need to remove for final production -->
- <div class="helper-viewport">
+<!--  <div class="helper-viewport">
   <p>Width:  <span id="width"></span> <br>Height: <span id="height"></span></p>
-</div>
-<!-- Need to add class terms_condition to body dynamically -->
+</div> -->
 
 
 
 
-<div class="primary-header navbar" role="navigation">
-    <div class="container-fluid header-bg">
-      <nav>
-        <h1><a href="/" class="replace">Runway</a></h1>
-        <span role="primary-nav">
-          <a href="from_run_way.html" class="item">From the run way</a>
-          <a href="collections.html" class="item">Collections</a>
-          <a href="javascript:;" class="item">Designers</a>
-          <a href="shows.html" class="item">Shows</a>
-        </span>
-        <span role="secondary-nav">
-          <a href="javascript:;" class="item open-popup search" title="Search">Search <i class="fa fa-search"></i></a>
-          <a href="javascript:;" class="item">Sign in</a>
-          <a href="javascript:;" class="item">Register</a>
-          <a href="wishlist.html" class="item">Wishlist <span>(0)</span></a>
-          <a href="cart.html" class="item">Cart <span>(0)</span></a>
-        </span>
-      </nav>
+  <div id="navigation" class="primary-header navbar" role="navigation"></div>
+
+  <div class="designers-home">
+    <div class="cf">
+      <h3 class="title">Designers</h3>
     </div>
-</div>
-
-
-<div class="designers-home">
-  <div class="cf">
-    <h3 class="title">Designers</h3>
-  </div>
-    <div class="filter-column column">
-      <div class="padding">
-        <h3>Filter By</h3>
-        <div class="adCntnr" >
-          <div class="acco2">
-            <div class="expand"><a title="expand/collapse" href="javascript:;">Fall 15/16</a></div>
-            <div class="collapse">
-              <div class="accCntnt">
-                <a href="javascript:;">Summer</a>
-                <a href="javascript:;">Winter</a>
+      <div class="filter-column column">
+        <div class="padding">
+          <h3>Filter By</h3>
+          <div class="adCntnr" >
+            <div class="acco2">
+              <div class="expand"><a title="expand/collapse" href="javascript:;">Fall 15/16</a></div>
+              <div class="collapse">
+                <div class="accCntnt">
+                  <a href="javascript:;">Summer</a>
+                  <a href="javascript:;">Winter</a>
+                </div>
               </div>
-            </div>
-            <div style="height:5px;"></div>
+              <div style="height:5px;"></div>
 
-            <div class="expand"><a title="expand/collapse" href="javascript:;">Fall 13/14</a></div>
-            <div class="collapse">
-              <div class="accCntnt">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
+              <div class="expand"><a title="expand/collapse" href="javascript:;">Fall 13/14</a></div>
+              <div class="collapse">
+                <div class="accCntnt">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                </div>
               </div>
-            </div>
-            <div style="height:5px;"></div>
-            
-            <div class="expand"><a title="expand/collapse" href="javascript:;">Brands</a></div>
-            <div class="collapse">
-              <div class="accCntnt">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
+              <div style="height:5px;"></div>
+              
+              <div class="expand"><a title="expand/collapse" href="javascript:;">Brands</a></div>
+              <div class="collapse">
+                <div class="accCntnt">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                </div>
               </div>
-            </div>
-            <div style="height:5px;"></div>
-            <div class="expand"><a title="expand/collapse" href="javascript:;">Color</a></div>
-            <div class="collapse">
-              <div class="accCntnt">
-                <p>
-                  <a href="javascript:;">color</a>
-                </p>
+              <div style="height:5px;"></div>
+              <div class="expand"><a title="expand/collapse" href="javascript:;">Color</a></div>
+              <div class="collapse">
+                <div class="accCntnt">
+                  <p>
+                    <a href="javascript:;">color</a>
+                  </p>
+                </div>
               </div>
-            </div>
 
-            <div style="height:5px;"></div>
-            <div class="expand"><a title="expand/collapse" href="javascript:;">Price</a></div>
-            <div class="collapse">
-              <div class="accCntnt">
-                <p>
-                  <a href="javascript:;">price</a>
-                </p>
+              <div style="height:5px;"></div>
+              <div class="expand"><a title="expand/collapse" href="javascript:;">Price</a></div>
+              <div class="collapse">
+                <div class="accCntnt">
+                  <p>
+                    <a href="javascript:;">price</a>
+                  </p>
+                </div>
               </div>
+
+
             </div>
-
-
           </div>
         </div>
       </div>
-    </div>
-    <div class="three-fourth column">
-      <ul>
-        <li>
-          <a href="javascript:;">
-            <img src="/images/d1.png" />
-            <div class="overlay-name-company">
-              <h3>Kharl Lagerfield</h3>
-              <span class="brand_name">Chanel</span>
-              <span class="bio">Bio</span>
-              <p class="bio_description">This is dummy text. It is intended to be read but have no meaning...</p>
-              <div class="view_detailed_profile">View Detailed Profile</div>
-            </div>
-          </a>
-        </li><li>
-          <a href="javascript:;">
-            <img src="/images/d2.png" />
-            <div class="overlay-name-company">
-              <h3>Designer Name</h3>
-              <span class="brand_name">Company Name</span>
-              <span class="bio">Bio</span>
-              <p class="bio_description">This is dummy text. It is intended to be read but have no meaning...</p>
-              <div class="view_detailed_profile">View Detailed Profile</div>
-            </div>
-          </a>
-        </li><li>
-          <a href="javascript:;">
-            <img src="/images/d3.png" />
-            <div class="overlay-name-company">
-              <h3>Designer Name</h3>
-              <span class="brand_name">Company Name</span>
-              <span class="bio">Bio</span>
-              <p class="bio_description">This is dummy text. It is intended to be read but have no meaning...</p>
-              <div class="view_detailed_profile">View Detailed Profile</div>
-            </div>
-          </a>
-        </li><li>
-          <a href="javascript:;">
-            <img src="/images/d4.png" />
-            <div class="overlay-name-company">
-              <h3>Designer Name</h3>
-              <span class="brand_name">Company Name</span>
-              <span class="bio">Bio</span>
-              <p class="bio_description">This is dummy text. It is intended to be read but have no meaning...</p>
-              <div class="view_detailed_profile">View Detailed Profile</div>
-            </div>
-          </a>
-        </li><li>
-          <a href="javascript:;">
-            <img src="/images/d5.png" />
-            <div class="overlay-name-company">
-              <h3>Designer Name</h3>
-              <span class="brand_name">Company Name</span>
-              <span class="bio">Bio</span>
-              <p class="bio_description">This is dummy text. It is intended to be read but have no meaning...</p>
-              <div class="view_detailed_profile">View Detailed Profile</div>
-            </div>
-          </a>
-        </li><li>
-          <a href="javascript:;">
-            <img src="/images/d1.png" />
-            <div class="overlay-name-company">
-              <h3>Designer Name</h3>
-              <span class="brand_name">Company Name</span>
-              <span class="bio">Bio</span>
-              <p class="bio_description">This is dummy text. It is intended to be read but have no meaning...</p>
-              <div class="view_detailed_profile">View Detailed Profile</div>
-            </div>
-          </a>
-        </li><li>
-          <a href="javascript:;">
-            <img src="/images/d2.png" />
-            <div class="overlay-name-company">
-              <h3>Designer Name</h3>
-              <span class="brand_name">Company Name</span>
-              <span class="bio">Bio</span>
-              <p class="bio_description">This is dummy text. It is intended to be read but have no meaning...</p>
-              <div class="view_detailed_profile">View Detailed Profile</div>
-            </div>
-          </a>
-        </li><li>
-          <a href="javascript:;">
-            <img src="/images/d3.png" />
-            <div class="overlay-name-company">
-              <h3>Designer Name</h3>
-              <span class="brand_name">Company Name</span>
-              <span class="bio">Bio</span>
-              <p class="bio_description">This is dummy text. It is intended to be read but have no meaning...</p>
-              <div class="view_detailed_profile">View Detailed Profile</div>
-            </div>
-          </a>
-        </li><li>
-          <a href="javascript:;">
-            <img src="/images/d4.png" />
-            <div class="overlay-name-company">
-              <h3>Designer Name</h3>
-              <span class="brand_name">Company Name</span>
-              <span class="bio">Bio</span>
-              <p class="bio_description">This is dummy text. It is intended to be read but have no meaning...</p>
-              <div class="view_detailed_profile">View Detailed Profile</div>
-            </div>
-          </a>
-        </li><li>
-          <a href="javascript:;">
-            <img src="/images/d5.png" />
-            <div class="overlay-name-company">
-              <h3>Designer Name</h3>
-              <span class="brand_name">Company Name</span>
-              <span class="bio">Bio</span>
-              <p class="bio_description">This is dummy text. It is intended to be read but have no meaning...</p>
-              <div class="view_detailed_profile">View Detailed Profile</div>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="javascript:;">
-            <img src="/images/d5.png" />
-            <div class="overlay-name-company">
-              <h3>Designer Name</h3>
-              <span class="brand_name">Company Name</span>
-              <span class="bio">Bio</span>
-              <p class="bio_description">This is dummy text. It is intended to be read but have no meaning...</p>
-              <div class="view_detailed_profile">View Detailed Profile</div>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="javascript:;">
-            <img src="/images/d5.png" />
-            <div class="overlay-name-company">
-              <h3>Designer Name</h3>
-              <span class="brand_name">Company Name</span>
-              <span class="bio">Bio</span>
-              <p class="bio_description">This is dummy text. It is intended to be read but have no meaning...</p>
-              <div class="view_detailed_profile">View Detailed Profile</div>
-            </div>
-          </a>
-        </li>
-      </ul>
-      <div class="cf"></div>
-      <div class="text-right">
-        <ol class="pagination">
-          <li class="active"><a href="javascript:;">1</a></li>
-          <li><a href="javascript:;">2</a></li>
-          <li><a href="javascript:;">3</a></li>
-          <li><a href="javascript:;">4</a></li>
-          <li><a href="javascript:;">5</a></li>
-        </ol>
+      <div class="three-fourth column">
+        <ul>
+          <li>
+            <a href="designer_details.html">
+              <img src="/images/d1.png" />
+              <div class="overlay-name-company">
+                <h3>Kharl Lagerfield</h3>
+                <span class="brand_name">Chanel</span>
+                <span class="bio">Bio</span>
+                <p class="bio_description">This is dummy text. It is intended to be read but have no meaning...</p>
+                <div class="view_detailed_profile">View Detailed Profile</div>
+              </div>
+            </a>
+          </li><li>
+            <a href="javascript:;">
+              <img src="/images/d2.png" />
+              <div class="overlay-name-company">
+                <h3>Designer Name</h3>
+                <span class="brand_name">Company Name</span>
+                <span class="bio">Bio</span>
+                <p class="bio_description">This is dummy text. It is intended to be read but have no meaning...</p>
+                <div class="view_detailed_profile">View Detailed Profile</div>
+              </div>
+            </a>
+          </li><li>
+            <a href="javascript:;">
+              <img src="/images/d3.png" />
+              <div class="overlay-name-company">
+                <h3>Designer Name</h3>
+                <span class="brand_name">Company Name</span>
+                <span class="bio">Bio</span>
+                <p class="bio_description">This is dummy text. It is intended to be read but have no meaning...</p>
+                <div class="view_detailed_profile">View Detailed Profile</div>
+              </div>
+            </a>
+          </li><li>
+            <a href="javascript:;">
+              <img src="/images/d4.png" />
+              <div class="overlay-name-company">
+                <h3>Designer Name</h3>
+                <span class="brand_name">Company Name</span>
+                <span class="bio">Bio</span>
+                <p class="bio_description">This is dummy text. It is intended to be read but have no meaning...</p>
+                <div class="view_detailed_profile">View Detailed Profile</div>
+              </div>
+            </a>
+          </li><li>
+            <a href="javascript:;">
+              <img src="/images/d5.png" />
+              <div class="overlay-name-company">
+                <h3>Designer Name</h3>
+                <span class="brand_name">Company Name</span>
+                <span class="bio">Bio</span>
+                <p class="bio_description">This is dummy text. It is intended to be read but have no meaning...</p>
+                <div class="view_detailed_profile">View Detailed Profile</div>
+              </div>
+            </a>
+          </li><li>
+            <a href="javascript:;">
+              <img src="/images/d1.png" />
+              <div class="overlay-name-company">
+                <h3>Designer Name</h3>
+                <span class="brand_name">Company Name</span>
+                <span class="bio">Bio</span>
+                <p class="bio_description">This is dummy text. It is intended to be read but have no meaning...</p>
+                <div class="view_detailed_profile">View Detailed Profile</div>
+              </div>
+            </a>
+          </li><li>
+            <a href="javascript:;">
+              <img src="/images/d2.png" />
+              <div class="overlay-name-company">
+                <h3>Designer Name</h3>
+                <span class="brand_name">Company Name</span>
+                <span class="bio">Bio</span>
+                <p class="bio_description">This is dummy text. It is intended to be read but have no meaning...</p>
+                <div class="view_detailed_profile">View Detailed Profile</div>
+              </div>
+            </a>
+          </li><li>
+            <a href="javascript:;">
+              <img src="/images/d3.png" />
+              <div class="overlay-name-company">
+                <h3>Designer Name</h3>
+                <span class="brand_name">Company Name</span>
+                <span class="bio">Bio</span>
+                <p class="bio_description">This is dummy text. It is intended to be read but have no meaning...</p>
+                <div class="view_detailed_profile">View Detailed Profile</div>
+              </div>
+            </a>
+          </li><li>
+            <a href="javascript:;">
+              <img src="/images/d4.png" />
+              <div class="overlay-name-company">
+                <h3>Designer Name</h3>
+                <span class="brand_name">Company Name</span>
+                <span class="bio">Bio</span>
+                <p class="bio_description">This is dummy text. It is intended to be read but have no meaning...</p>
+                <div class="view_detailed_profile">View Detailed Profile</div>
+              </div>
+            </a>
+          </li><li>
+            <a href="javascript:;">
+              <img src="/images/d5.png" />
+              <div class="overlay-name-company">
+                <h3>Designer Name</h3>
+                <span class="brand_name">Company Name</span>
+                <span class="bio">Bio</span>
+                <p class="bio_description">This is dummy text. It is intended to be read but have no meaning...</p>
+                <div class="view_detailed_profile">View Detailed Profile</div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <img src="/images/d5.png" />
+              <div class="overlay-name-company">
+                <h3>Designer Name</h3>
+                <span class="brand_name">Company Name</span>
+                <span class="bio">Bio</span>
+                <p class="bio_description">This is dummy text. It is intended to be read but have no meaning...</p>
+                <div class="view_detailed_profile">View Detailed Profile</div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <img src="/images/d5.png" />
+              <div class="overlay-name-company">
+                <h3>Designer Name</h3>
+                <span class="brand_name">Company Name</span>
+                <span class="bio">Bio</span>
+                <p class="bio_description">This is dummy text. It is intended to be read but have no meaning...</p>
+                <div class="view_detailed_profile">View Detailed Profile</div>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <div class="cf"></div>
+        <div class="text-right">
+          <ol class="pagination">
+            <li class="active"><a href="javascript:;">1</a></li>
+            <li><a href="javascript:;">2</a></li>
+            <li><a href="javascript:;">3</a></li>
+            <li><a href="javascript:;">4</a></li>
+            <li><a href="javascript:;">5</a></li>
+          </ol>
+        </div>
       </div>
-    </div>
-</div>
+  </div>
+
+  <div id='footer' class="primary-footer template"></div>
+  <div id="test-popup" class="white-popup mfp-with-anim mfp-hide subscribe"></div>
 
 
 
-<div class="primary-footer">
-    <div>
-      <img src="images/runway-footer-logo.png" class="notresponsive" />
-    </div>
-    <ul class="fleft">
-      <li>
-        <a href="from_run_way.html">FROM THE RUN WAY</a>
-      </li>
-      <li>
-        <a href="collections.html">COLLECTIONS</a>
-      </li>
-      <li>
-        <a href="javascript:;">DESIGNERS</a>
-      </li>
-      <li>
-        <a href="shows.html">SHOWS</a>
-      </li>
-    </ul>
-    <ul class="fright">
-      <li><a href="#test-popup" data-effect="mfp-zoom-in" class="subscribe open-popup-link" title="Subscribe">SUBSCRIBE <i class="fa fa-envelope-o"></i></a></li>
-      <li><a href="javascript:;" class="facebook" title="facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
-      <li><a href="javascript:;" class="twitter" title="twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
-      <li><a href="javascript:;" class="pinterest" title="pinterest" target="_blank"><i class="fa fa-pinterest"></i></a></li>
-      <li><a href="javascript:;" class="googleplus" title="google-plus" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-      <li><a href="javascript:;" class="tumblr" title="tumblr" target="_blank"><i class="fa fa-tumblr"></i></a></li>
-    </ul>
-    <span class="copyright">
-      <p>&copy; 2015 Runway.Moda Pte Ltd. All Rights Reserved.</p>
-    </span>
-</div>
-
-<div id="test-popup" class="white-popup mfp-with-anim mfp-hide subscribe">
-  <h3>Subscribe to Runway Newsletter!</h3>
-  <form action="">
-    <input type="text" name="" placeholder="Your Email Address...">
-    <i class="fa fa-paper-plane"></i>
-    <p>Subscribe to our weekly newsletter to receive the latest in your box!</p>
-
-    <div class="alert alert-success" role="alert">
-      <strong>Well done!</strong> You successfully read this important alert message.
-    </div>
-
-    <div class="alert alert-info" role="alert">
-      <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
-    </div>
-
-    <div class="alert alert-warning" role="alert">
-      <strong>Warning!</strong> Better check yourself, you're not looking too good.
-    </div>
-
-    <div class="alert alert-danger" role="alert">
-      <strong>Oh snap!</strong> Change a few things up and try submitting again.
-    </div>
-    
-    <a href="javascript:;" title="Close (Esc)" class="mfp-close custom-btn default">No, Thanks</a>
-    <input type="submit" name="subscribe-submit" id="subscribe-submit" class="custom-btn success" value="Subscribe!">
-    
-  </form>
-</div>
   <!-- Essential javascripts -->
-  <script type="text/javascript"src="/js/vendor/jquery.min.js"></script>
-  <script src="/js/vendor/jquery.magnific-popup.js"></script>
+  <script type="text/javascript" src="/js/vendor/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/vendor/jquery.magnific-popup.js"></script>
   <script type="text/javascript" src="/js/vendor/jquery.fitvids1.1.js"></script>
   <script type="text/javascript" src="/js/vendor/jquery.bxslider.js"></script>
+  <script type="text/javascript" src="/js/vendor/classie.js"></script>
 
+<script type='text/javascript'>
+  new EJS({url: 'partials/header-nav.ejs'}).update('navigation', {poo :'ha ha ha'});
+  new EJS({url: 'partials/footer.ejs'}).update('footer', {poo :'ha ha ha'});
+  new EJS({url: 'partials/modal/subscription.ejs'}).update('test-popup', {poo :'ha ha ha'});
+</script>
 
 <script type="text/javascript">
-
-  
-/* Thanks to CSS Tricks for pointing out this bit of jQuery
-http://css-tricks.com/equal-height-blocks-in-rows/
-It's been modified into a function called at page load and then each time the page is resized. One large modification was to remove the set height before each new calculation. */
 
 equalheight = function(container){
 
@@ -376,26 +289,18 @@ var currentTallest = 0,
 }
 
 $(window).load(function() {
-  equalheight('.designers-home .column');
+  equalheight('.column');
 });
 
 
 $(window).resize(function(){
-  equalheight('.designers-home .column');
+  equalheight('.column');
 });
 
 
-
-
-
  $(document).ready(function(e) {
-   //showViewportSize();
 
-
-
-
-
-   // accordian
+  // accordian
 
   $('.adCntnr div.acco2:eq(0)').find('div.expand:eq(0)').addClass('openAd').end() /*find the first child and opended by default, and add class openAd*/
   .find('div.collapse:gt(0)').hide().end()
@@ -405,20 +310,19 @@ $(window).resize(function(){
     return false;
   });
 
-  $('.open-popup-link').magnificPopup({
+  $(".open-popup-link").magnificPopup({
     type:'inline',
-    midClick: true, // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
+    midClick: true,
+      removalDelay: 500, //delay removal by X to allow out-animation
+      callbacks: {
+        beforeOpen: function() {
+          this.st.mainClass = this.st.el.attr('data-effect');
+        }
+      },
+    });
 
-    removalDelay: 500, //delay removal by X to allow out-animation
-    callbacks: {
-      beforeOpen: function() {
-      this.st.mainClass = this.st.el.attr('data-effect');
-      }
-    },
-  });
-
-    // Dynamically created popup
-    $('.open-popup').magnificPopup({
+    // Dynamically created
+    $('.open-search-popup').magnificPopup({
       items: {
         removalDelay: 300,
         mainClass: 'mfp-fade',
@@ -427,33 +331,24 @@ $(window).resize(function(){
         '<p>Rony</p>' +
         '</div>',
         type: 'inline'
-        
       },
       closeBtnInside: true
     });
-  
 
+/*showViewportSize();
 
-  //  slider
-  $('.bxslider').bxSlider({
-    video: true,
-    useCSS: true,
-    touchEnabled: true,
-    adaptiveHeight: true,
-    pager: false
-  });
-
+$(window).resize(function(e) {
+   showViewportSize();
+ });
+ function showViewportSize() {
+   var the_width = $(window).width();
+   var the_height = $(window).height();
+   $('#width').text(the_width);
+   $('#height').text(the_height);
+ }*/
 
  });
- // $(window).resize(function(e) {
- //   showViewportSize();
- // });
- // function showViewportSize() {
- //   var the_width = $(window).width();
- //   var the_height = $(window).height();
- //   $('#width').text(the_width);
- //   $('#height').text(the_height);
- // }
+
 </script>
 
 

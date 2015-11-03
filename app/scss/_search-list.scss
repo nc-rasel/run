@@ -1,0 +1,7 @@
+.in-shows-search {
+  ol li {
+    @include col(1/2, $gutter: 1.4, $cycle: 2);
+    position: relative;
+    margin-bottom: 0;
+  }
+}
