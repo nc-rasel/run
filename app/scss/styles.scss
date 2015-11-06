@@ -27,6 +27,7 @@
 @import "quick-modal";
 @import "product-details";
 @import "global-search";
+@import "cart-page";
 
 
 
@@ -385,6 +386,7 @@
       }
     }
   }
+
   form {
     padding: 25px;
     .todesigner {
@@ -459,6 +461,25 @@
       }
     }
   }
+  &.add-address {
+    h3 {
+      background-color: none;
+      background: none;
+      color: $brand-color;
+      font-size: 39px;
+    }
+    form {
+      input {
+        width: 100%;
+        padding-left: 10px;
+      }
+      select {
+        width: 100%;
+        font-size: 16px;
+        margin-bottom: 15px;
+      }
+    }
+  }
 }
 .custom-btn {
   padding: 5px 15px;
@@ -467,17 +488,21 @@
   font-size: 16px;
   width: initial;
   opacity: 1;
-  color: #fff !important;
+  color: $white !important;
   line-height: 35px;
   margin-right: 15px;
   outline: none;
   border: 0;
+  & + &:last-child {
+    margin-right: 0;
+  }
   &:active {
     -webkit-box-shadow: inset 0 3px 5px rgba($jetblack, .125);
     box-shadow: inset 0 3px 5px rgba($jetblack, .125);
   }
   &.default {
     background-color: $default;
+    color: $jetblack !important;
   }
   &.success {
     background-color: $success;
@@ -487,6 +512,13 @@
   }
   &.btn-gray {
     background-color: $btn-gray;
+  }
+  &.btn-pink {
+    background-color: $btn-pink;
+  }
+  &.cart-btn {
+    padding: 0 15px;
+    float: left;
   }
 }
 

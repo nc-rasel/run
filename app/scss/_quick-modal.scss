@@ -17,7 +17,7 @@
 				padding: 0;
 				h3 {
 					border-radius: 0;
-					margin: 5px 5px 5px 16px;
+					margin: 5px 5px 0 16px;
 					padding: 0 0 8px;
 					background: none;
 					border-bottom: 1px solid $brand-color;
@@ -32,7 +32,6 @@
 						display: inline-block;
 						margin-top: 5px;
 						margin-bottom: 5px;
-						margin-left: 15px;
 					}
 				}
 			}
@@ -67,7 +66,7 @@
 	}
 }
 select[rel="select"] {
-	width: 48%;
+	width: 45%;
 	font-size: 16px;
 	margin: 10px 0;
 }

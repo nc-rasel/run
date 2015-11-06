@@ -172,10 +172,10 @@ img:not(.notresponsive) {
 }
 .your-cart-at-aglance {
   position: absolute;
-  top: 18px;
+  top: 13px;
   right: 0;
-  width: 117px;
-  height: 43px; 
+  width: 130px;
+  height: 43px;
   background-color: #74558e;
   .bag {
     background: #999 url('../images/bag-icon.png') no-repeat 50% 50%;
@@ -321,7 +321,7 @@ img:not(.notresponsive) {
     display: initial;
   }
   .wish-meta {
-    padding: 8px 15px;
+    padding: 8px 15px 16px;
   }
   .brand_name {
     display: block;
@@ -353,7 +353,7 @@ img:not(.notresponsive) {
 }
 li.quick-view {
   .overlay-name-company {
-    bottom: -50px;
+    bottom: -48px;
     padding: 0;
     h3 {
       margin: 5px 15px;
@@ -365,11 +365,16 @@ li.quick-view {
     }
   }
 }
-
+.single-item {
+  h3 {
+    border: none;
+  }
+}
 li.add-to-selection {
   .overlay-name-company {
-    bottom: -50px;
+    bottom: -51px;
     padding: 0;
+    height: 141px;
     h3 {
       margin: 5px 15px;
     }
@@ -398,8 +403,12 @@ li.add-to-selection {
 .wish-meta {
   padding: 16px;
   font-size: 16px;
+  overflow: hidden;
+  > * {
+    float: left;
+  }
   .category {
-    max-width: 180px;
+    max-width: 178px;
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;
@@ -407,6 +416,7 @@ li.add-to-selection {
   }
   .price {
     float: right;
+    max-width: 86px;
   }
 }
 
@@ -414,6 +424,7 @@ li.add-to-selection {
   font-size: 16px;
   background-color: rgba($brand-color, 1);
   padding: 15px;
+  overflow: hidden;
   select {
     display: inline-block;
     float: left;
@@ -421,32 +432,37 @@ li.add-to-selection {
   .add-selection {
     color: $white;
     text-transform: uppercase;
-    margin-left: 25px;
     font-size: 14px;
     display: inline-block;
     .fa {
       padding-left: 5px;
     }
   }
+  > a {
+    display: inline-block;
+    float: left;
+    &:last-child {
+      float: right;
+    }
+  }
   a:hover {
     color: darkseagreen;
+  }
+}
+a.save {
+  &:after {
+    content: "+";
+    position: relative;
+    left: -14px;
+    color: $jetblack;
+    font-size: 12px;
+    top: -3px;
   }
 }
 .action-item {
   text-transform: uppercase;
   color: $white;
   display: inline;
-  &:last-child {
-    float: right;
-    &:after {
-      content: "+";
-      position: relative;
-      left: -14px;
-      color: $jetblack;
-      font-size: 12px;
-      top: -3px;
-    }
-  }
 }
 
 table {
@@ -459,13 +475,12 @@ caption,td,th {
 }
 
 td,th {
-  text-align: center;
   padding: .5em 5px;
   font-size: 1em
 }
 
 th {
-  background-color: #fff
+  background-color: $white;
 }
 
 caption {
@@ -477,4 +492,7 @@ caption {
 
 .table-striped>tbody>tr:nth-child(odd)>td,.table-striped>tbody>tr:nth-child(odd)>th {
   background-color: #f9f9f9
+}
+.block {
+  width: 100%;
 }

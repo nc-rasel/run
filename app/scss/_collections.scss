@@ -2,17 +2,6 @@
   .action-item {
     text-transform: uppercase;
     color: $white;
-    &:last-child {
-      float: right;
-      &:after {
-        content: "+";
-        position: relative;
-        left: -14px;
-        color: $jetblack;
-        font-size: 12px;
-        top: -3px;
-      }
-    }
   }
 }
 // collections slider

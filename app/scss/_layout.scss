@@ -89,6 +89,8 @@
   .body-padding {
     padding: 14px;
     background-color: #efefef;
+    overflow: hidden;
+    padding-bottom: 30px;
   }
   .title {
     color: $brand-color;
