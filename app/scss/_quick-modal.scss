@@ -1,0 +1,79 @@
+.white-popup {
+	&.quick-modal {
+		border-radius: none;
+		background: $white;
+		max-width: 550px;
+		.vslider {
+			background: $white;
+			padding-bottom: 0;
+			overflow: hidden;
+		}
+		.core {
+			float: left;
+			margin-left: 14px;
+			position: relative;
+			.overlay-name-company {
+				bottom: -87px;
+				padding: 0;
+				h3 {
+					border-radius: 0;
+					margin: 5px 5px 5px 16px;
+					padding: 0 0 8px;
+					background: none;
+					border-bottom: 1px solid $brand-color;
+					font-size: 29px;
+				}
+				.cta-block, .wish-meta {
+					padding: 10px;
+					height: 100%;
+					.action-item {
+						color: $white;
+						text-transform: uppercase;
+						display: inline-block;
+						margin-top: 5px;
+						margin-bottom: 5px;
+						margin-left: 15px;
+					}
+				}
+			}
+		}
+		#quick-collection {
+			width: 196px;
+			margin: 0;
+			float: left;
+		}
+		.vertigo {
+			height: 470px;
+			li {
+				margin: 0 0 13px;
+				padding: 0;
+				width: 196px;
+				height: 228px;
+				a {
+					width: 196px;
+					height: 228px;
+					display: inline-block;
+				}
+			}
+		}
+		.btn-pre {
+			top: 0;
+			left: 13px;
+		}
+		.btn-next{
+			bottom: 0;
+			left: 13px;
+		}
+	}
+}
+select[rel="select"] {
+	width: 48%;
+	font-size: 16px;
+	margin: 10px 0;
+}
+.select-size {
+	float: left;
+}
+.select-quantity {
+	float: right !important;
+}

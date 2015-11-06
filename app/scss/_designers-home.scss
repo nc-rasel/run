@@ -18,7 +18,7 @@
   font-family: $primary-font;
   height: 100%;
   position: relative;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3b353f+0,221131+100 */
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3b353f+0,221131+100 */
   background: #3b353f; /* Old browsers */
   background: -moz-linear-gradient(top,  #3b353f 0%, #221131 100%); /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3b353f), color-stop(100%,#221131)); /* Chrome,Safari4+ */
@@ -54,11 +54,6 @@
       height: 100%;
     }
     a {
-      display: block;
-      height: 100%;
-      box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
       &:hover {
         .bio, .bio_description {
           display: block;
@@ -69,53 +64,6 @@
         .bio {
           display: block;
         }
-        .overlay-name-company {
-          bottom: 0;
-        }
-      }
-    }
-    .overlay-name-company {
-      position: absolute;
-      left: 0;
-      bottom: -140px;
-      right: 0;
-      background-color: rgba($brand-color-overlay, 0.75);
-      text-align: left;
-      color: $white;
-      padding: 0;
-      transition: all .5s cubic-bezier(0.22, 0.61, 0.36, 1);
-      h3 {
-        margin: 0;
-        padding: 15px 0 10px 15px;
-        font-size: 22px;
-        font-weight: 300;
-      }
-      .brand_name {
-        display: block;
-      }
-      .brand_name, .bio, .bio_description {
-        font-size: 14px;
-        padding: 0 15px 15px;
-      }
-      .bio {
-        display: none;
-        font-weight: 700;
-        font-size: 16px;
-      }
-      .bio_description {
-        line-height: 1.6;
-        font-size: 16px;
-      }
-      .view_detailed_profile {
-        background-color: rgba($brand-color, 0.7);
-        background-image: url('../images/right-arrow.png');
-        background-position: 93% center;
-        background-repeat: no-repeat;
-        background-size: 12%;
-        font-size: 28px;
-        color: $white;
-        padding: 20px 15px;
-        font-family: 'Source Sans Pro',sans-serif;
       }
     }
   }
@@ -132,40 +80,6 @@
   @include center(1200px, 14px);
   padding-top: 14px;
   padding-bottom: 14px;
-  .bx-wrapper .bx-controls-direction a {
-    top: 90px;
-    left: 70px;
-  }
-  .designer-slider .bx-wrapper .bx-next {
-    bottom: -14px;
-    top: inherit;
-    right: 70px;
-  }
-  .bx-wrapper .bx-prev {
-    background: url(../images/up.png) no-repeat center;
-    width: 170px;
-    height: 49px;
-    background-color: rgba(#7f3b9a, 0.9);
-  }
-  .bx-wrapper .bx-next {
-    background: url(../images/down.png) no-repeat center;
-    width: 170px;
-    height: 49px;
-    background-color: rgba(#7f3b9a, 0.9);
-  }
-  .bx-wrapper .coloctions-slider li {
-    height: 175px !important;
-    .single-item {
-      outline: none;
-      height: 100% !important;
-      background-repeat: no-repeat;
-      background-size: 100%;
-      background-position: center;
-      .overlay-name-company {
-        bottom: -1px;
-      }
-    }
-  }
 }
 .rightmenu {
   background: $white;

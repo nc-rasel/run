@@ -1,0 +1,96 @@
+//  video details page
+.video-details-page {
+  .colmask-wrapper {
+    position:relative;
+    clear:both;
+    float:left;
+    width:100%;
+    overflow:hidden;
+    @include center(1172px);
+  }
+  .rightside {
+    background: $white;
+    .colleft {
+      float:left;
+      width:200%;
+      margin-left: -244px;
+      position:relative;
+      right: 100%;
+    }
+    .col1wrap {
+      float: left;
+      width: 50%;
+      position: relative;
+      left: 50%;
+    }
+    .col1 {
+      margin: 0 0 0 244px;
+      overflow: hidden;
+      .right {
+        width: 302px;
+        float: right;
+        margin-left: 14px;
+      }
+      .left {
+        float: none;
+        width: auto;
+        overflow: hidden;
+      }
+    }
+    .col2 {
+      float: right;
+      width: 230px;
+      position: relative;
+      left: 244px;
+      background-color: $white;
+    }
+  }
+}
+
+// product details page
+
+.product-details-page {
+  @include center(1200px, 14px);
+  background: $white;
+  position: relative;
+  padding-bottom: 15px;
+  .details-right {
+    @include span(4/5);
+    padding-left: 14px;
+    .right {
+      width: 302px;
+      float: left;
+      margin-right: 14px;
+    }
+    .left {
+      float: none;
+      width: auto;
+      overflow: hidden;
+      .size-quantity-social {
+        > div {
+          @include span(1/2);
+        }
+      }
+    }
+  }
+}
+
+// cart page
+
+.cart-page {
+  @include center(1200px);
+  padding-bottom: 14px;
+  background-color: $white;
+  position: relative;
+  .header-padding {
+    padding-right: 14px;
+    padding-left: 14px;
+  }
+  .body-padding {
+    padding: 14px;
+    background-color: #efefef;
+  }
+  .title {
+    color: $brand-color;
+  }
+}

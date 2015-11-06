@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--
+  runway.com
+  v1
+  Written by S.M Rasel Mahamud (Creative Director | rasel.me | rasel.rony@sekai-lab-bd.com)
+-->
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>Runway.Moda</title>
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200,700,600,300italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/styles.min.css">
+  <script type="text/javascript" src="js/vendor/modernizr-custom.js"></script>
+  <script type="text/javascript" src="js/ejs_0.9_alpha_1_production.js"></script>
+</head>
+<body>
+  <div class="page-wrap">
+    <div id="navigation" class="primary-header navbar" role="navigation"></div>
+    <div class="login-register-forget-wrapper slide-5">
+      <div class="log-reg-block">
+        <h3>Forgot Password?</h3>
+        <form action="" method="post">
+          <input type="email" placeholder="Email address" id="email" name="email" value="" required>
+          <p class="form-tips">Enter your email address in the box above, an email will be sent to your address to change your password.</p>
+          <footer>
+          <input type="submit" value="Submit" class="custom-btn purple">
+          </footer>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div id='footer' class="primary-footer template site-footer"></div>
+  <div id="test-popup" class="white-popup mfp-with-anim mfp-hide subscribe"></div>
+  <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
+  <script type="text/javascript" src="js/vendor/jquery.magnific-popup.js"></script>
+  <script type="text/javascript" src="js/vendor/jquery.fitvids1.1.js"></script>
+  <script type="text/javascript" src="js/vendor/jquery.bxslider.js"></script>
+  <script type="text/javascript" src="js/vendor/classie.js"></script>
+  <script type='text/javascript'>
+    new EJS({url: 'partials/header-nav.ejs'}).update('navigation', {poo :'ha ha ha'});
+    new EJS({url: 'partials/footer.ejs'}).update('footer', {poo :'ha ha ha'});
+    new EJS({url: 'partials/modal/subscription.ejs'}).update('test-popup', {poo :'ha ha ha'});
+  </script>
+
+  <script type="text/javascript">
+   $(document).ready(function(e) {
+      $(".open-popup-link").magnificPopup({
+        type:'inline',
+        midClick: true,
+
+        removalDelay: 500,
+        callbacks: {
+          beforeOpen: function() {
+          this.st.mainClass = this.st.el.attr('data-effect');
+          }
+        },
+      });
+      // Dynamically created
+      $('.open-search-popup').magnificPopup({
+        items: {
+          removalDelay: 300,
+          mainClass: 'mfp-fade',
+          src: '<div class="white-popup search-modal">' +
+          '<form action="">' +
+          '<input id="search" type="search" tabindex="1" i18n-values="placeholder:searchButton"  placeholder="Type and enter..." autofocus>' +
+          '<i class="fa fa-fw"></i>' +
+          '<p>You can search by product name, Designer name, collection name. etc.</p>' +
+          '</form>' +
+          '</div>',
+          type: 'inline'
+        },
+        closeBtnInside: true
+      });
+
+      function slideHeight() {
+        var windowHeight = $(window).height(),
+            navHeight = $('#navigation').height();
+            footerHeight = $('#footer').height();
+
+        $('.login-register-forget-wrapper').height(windowHeight - navHeight - footerHeight);
+      }
+
+      slideHeight();
+
+      $(window).resize(function(){
+        var windowHeight = $(window).height(),
+            navHeight = $('#navigation').height();
+            footerHeight = $('#footer').height();
+
+        $('.login-register-forget-wrapper').height(windowHeight - navHeight - footerHeight);
+      })
+
+   });
+
+  </script>
+ </body>
+ </html>

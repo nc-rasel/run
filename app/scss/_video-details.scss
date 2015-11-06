@@ -1,0 +1,141 @@
+@import '../../bower_components/jeet/scss/jeet/index';
+.video-details-page {
+	@include center(1200px, 14px);
+	padding-bottom: 15px;
+	background-color: $white;
+	.title {
+		color: $brand-color;
+	}
+	.sub-title {
+		margin: 15px 58px 0 0;
+		font-size: 46px;
+	}
+	.subscribe-social-link, .bottom-nav {
+		width: auto;
+		li a {
+			color: rgba($white, 0.8);
+		}
+		li {
+    	&:first-child {
+      	margin-left: 0;
+    	}
+    	&:last-child {
+    		margin-right: 0;
+    	}
+    }
+	}
+	.media-heading {
+		font-size: 29px;
+		font-weight: normal;
+	}
+	.like-dislike a {
+		color: $white;
+		&:hover {
+			color: $twitter;
+		}
+		&:last-child {
+			margin-left: 25px;
+			&:hover {
+				color: $pinterest;
+			}
+		}
+	}
+	.commnets-block {
+		h3 {
+			font-size: 29px;
+			font-weight: 400;
+			margin: 0 0 15px;
+			padding: 0;
+		}
+		textarea {
+			width: 100%;
+			background-color: #f8f8f8;
+    	border: 1px solid rgba($jetblack, .1);
+    	border-radius: 2px;
+    	padding: 5px;
+    	height: 150px;
+    	resize: none;
+    	outline: none;
+    	margin-bottom: 15px;
+    	&:focus {
+	    	border: 1px solid rgba($brand-color, .7);
+			}
+		}
+	}
+}
+.vslider {
+	background: linear-gradient(to right,#29232f,#27202d,#140c1c);
+	position: relative;
+	padding-bottom: 15px;
+	> h3 {
+		font-weight:  normal;
+		font-family: $primary-font;
+		font-size: 29px;
+		color: $white;
+		padding: 15px;
+    margin: 0;
+    line-height: 29px;
+	}
+}
+#designer-collection {
+	width: 272px;
+	margin: 0 auto;
+}
+
+/* Vertigo Style Settings */
+
+.vertigo {
+	padding: 0;
+	margin: 0;
+	height: 740px;
+	overflow: hidden;
+
+}
+
+.vertigo li {
+	list-style: none;
+	padding: 0;
+	display: inline-block;
+	position: relative;
+	margin-bottom: 14px;
+}
+
+
+.vertigo li img{
+	float:left;
+	margin: 0;
+}
+
+.vertigo li p{
+	margin:0px;
+	text-align: justify;
+}
+
+.btn-pre, .btn-next{
+	width: 170px;
+	height: 49px;
+	background-color: rgba(#7f3b9a, .65);
+	position: absolute;
+	z-index:  12;
+	left: 65px;
+	outline: none;
+	text-indent: -999em;
+}
+.btn-pre {
+	top: 59px;
+	background-image: url('../images/up.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.btn-next{
+	bottom: 0;
+	background-image: url('../images/down.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.bottom-part {
+	background-color: transparent !important;
+	color: $white;
+	margin-top: 15px;
+}

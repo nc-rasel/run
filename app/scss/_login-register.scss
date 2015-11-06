@@ -1,0 +1,138 @@
+.login-register-forget-wrapper {
+  // min-height: 100vh;
+  position: relative;
+  @include center(1200px);
+  &.dheight {
+    &:before {
+
+    }
+  }
+  &.slide-1 {
+    background: url('../images/fashion36.jpg') no-repeat 50%;
+    background-size: cover;
+  }
+  &.slide-2 {
+    background: url('../images/slide-2.jpeg') no-repeat 50%;
+    background-size: cover;
+  }
+  &.slide-3 {
+    background: url('../images/slide-3.jpeg') no-repeat 50%;
+    background-size: cover;
+  }
+  &.slide-4 {
+    background: url('../images/slide-4.jpeg') no-repeat 50%;
+    background-size: cover;
+  }
+  &.slide-5 {
+    background: url('../images/Layer-1.jpg') no-repeat 50%;
+    background-size: cover;
+  }
+  .log-reg-block {
+    max-width: 400px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 100px;
+    h3 {
+      font-weight: normal;
+      font-size: 29px;
+      font-family: $primary-font;
+      margin: 0 0 10px 20px;
+      color: $white;
+      text-shadow: 1px 1px #000;
+    }
+    form {
+      padding: 20px;
+      border-radius: 6px;
+      background-color: rgba(#371d4c, 0.8);
+      overflow: hidden;
+      label[for="rememberMe"] {
+        color: $white;
+        input {
+          margin-right: 10px;
+        }
+      }
+      .form-tips {
+        color: $white;
+        padding-bottom: 15px;
+        span {
+          display: block;
+          margin: 5px 0 8px;
+        }
+        a {
+          color: aqua;
+          border-bottom: 1px solid;
+        }
+      }
+      // need to refactor this part later
+      .help {
+        display:none;
+        font-size:90%;
+      }
+      input:focus + .help {
+        display:inline-block;
+      }
+      //
+      footer {
+        height: 45px;
+        line-height: 45px;
+        a {
+          border-bottom: 1px solid;
+        }
+        input {
+          float: right;
+        }
+      }
+      input[name="role"] {
+        margin: 0 10px;
+      }
+      input[type="password"], input[type="email"], input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #f8f8f8;
+        border: 1px solid rgba(0,0,0,.1);
+        outline: 0;
+        border-radius: 2px;
+        margin-bottom: 15px;
+        &:focus {
+          border: 1px solid rgba(#371d4c,.7);
+        }
+        &+.fa {
+          position: relative;
+          top: -43px;
+          color: #999;
+          font-size: 18px;
+          left: 10px;
+        }
+      }
+      .help-link {
+        color: $white;
+      }
+    }
+  }
+}
+
+
+/* this is the big trick*/
+#wrapper:before {
+    content:'';
+    float: left;
+    height: 100%;
+}
+#wrapper {
+    height: 100%;
+    background-color: black;
+    color: white;
+}
+#header {
+    background-color:#000;
+}
+#content {
+    background-color: gray;
+}
+/* this is the big trick*/
+#content:after {
+    content:'';
+    display: block;
+    clear: both;
+}

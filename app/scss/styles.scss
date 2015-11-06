@@ -7,6 +7,8 @@
 @import "colors";
 @import "base";
 @import "media-object";
+@import "layout";
+@import "login-register";
 // @import "search-form";
 @import "modal";
 @import "jquery.bxslider";
@@ -16,10 +18,16 @@
 @import "pagination";
 @import "accordion";
 @import "designers-home";
+@import "vartical-slider";
 @import "wishlist-home";
 @import "collections";
 @import "search-list";
 @import "shows-page";
+@import "video-details";
+@import "quick-modal";
+@import "product-details";
+@import "global-search";
+
 
 
 .helper-viewport {
@@ -170,7 +178,7 @@
 
 .title {
   span {
-    font-size: 22px;
+    font-size: 30px;
     color: #999;
   }
 }
@@ -212,7 +220,7 @@
 }
 
 
-.primary-footer {
+.primary-footer, .bottom-part {
   @include center(1200px);
   background-color: $white;
   text-align: center;
@@ -232,51 +240,7 @@
   ul.fleft, ul.fright {
     margin-top: 6px;
   }
-  ul li {
-    display: inline-block;
-    margin-right: 20px;
-    &:first-child {
-      margin-left: 20px;
-    }
-    a {
-      color: $black;
-      font-size: 13px;
-      &:hover {
-        color: $brand-color;
-      }
-      &.subscribe .fa {
-        margin-left: 5px;
-      }
-      & .fa {
-        color: rgba($black, 0.6);
-      }
-      &.facebook:hover {
-        .fa {
-          color: $facebook;
-        }
-      }
-      &.twitter:hover {
-        .fa {
-          color: $twitter;
-        }
-      }
-      &.pinterest:hover {
-        .fa {
-          color: $pinterest; 
-        }
-      }
-      &.googleplus:hover {
-        .fa {
-          color: $googleplus;
-        }
-      }
-      &.tumblr:hover {
-        .fa {
-          color: $tumblr;
-        }
-      }
-    }
-  }
+
   .copyright {
     border-top: 2px solid #c0c0c0;
     padding: 25px 0;
@@ -348,15 +312,17 @@
 }
 
 // subscribe UI
-.white-popup.subscribe {
-  border-radius:12px 12px 0 0;
-  padding: 0;
+.white-popup {
   h3 {
     padding: 10px 15px 20px;
-    background-color: $brand-color;
-    background-image: url('../images/border.jpg');
-    background-position: bottom;
-    background-repeat: repeat-x;
+    background: #4d3264; /* Old browsers */
+    background: -moz-linear-gradient(45deg,  #4d3264 0%, #351e4a 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#4d3264), color-stop(100%,#351e4a)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(45deg,  #4d3264 0%,#351e4a 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(45deg,  #4d3264 0%,#351e4a 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(45deg,  #4d3264 0%,#351e4a 100%); /* IE10+ */
+    background: linear-gradient(45deg,  #4d3264 0%,#351e4a 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d3264', endColorstr='#351e4a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     border-radius: 10px 10px 0 0;
     margin: 0;
     line-height: 36px;
@@ -364,8 +330,86 @@
     color: $white;
     font-size: 22px;
   }
+  &.contmsg {
+    border-radius:12px 12px 0 0;
+    padding: 0;
+  }
+  &.subscribe {
+    border-radius:12px 12px 0 0;
+    padding: 0;
+  }
+  &.quick-modal {
+    border-radius:12px 12px 0 0;
+    padding: 0;
+  }
+  &.search-modal {
+    padding: 20px;
+    // background-color: #000;
+    background: linear-gradient(45deg,#4d3264 0,#351e4a 100%);
+    border-radius: 3px;
+    max-width: 700px;
+    border: 1px solid #737373;
+    border-radius: .25em;
+    button.mfp-close {
+      color: #ccc !important;
+    }
+    form {
+      padding: 20px;
+      margin-top: 20px;
+      input[type="search"] {
+        width: 100%;
+        background: #111;
+        outline: none;
+        border: 1px solid #737373;
+        color: #999;
+        padding: 20px 10px 20px 40px;
+        box-sizing: border-box;
+        border-radius: 3px;
+        margin-bottom: 15px;
+        font-size: 20px;
+        &:focus {
+          border-color: #f8f8f8;
+          & + .fa {
+            color: #f8f8f8;
+          }
+        }
+        & + .fa {
+          color: #333;
+          position: relative;
+          top: -58px;
+          left: 10px;
+        }
+      }
+      p {
+        font-weight: normal;
+      }
+    }
+  }
   form {
     padding: 25px;
+    .todesigner {
+      margin-bottom: 15px;
+      display: inline-block;
+      img {
+        border-radius: 100%;
+        width: 42px;
+        height: 42px;
+        vertical-align: middle;
+      }
+    }
+    textarea {
+      width: 100%;
+      padding: 10px;
+      background-color: #f8f8f8;
+      border: 1px solid rgba($jetblack, 0.1);
+      outline: 0;
+      border-radius: 2px;
+      margin-bottom: 25px;
+      min-height: 100px;
+      &:focus {
+        border: 1px solid rgba($brand-color, 0.7);
+      }
+    }
     input[type="text"] {
       width: 100%;
       padding: 10px 10px 10px 40px;
@@ -417,7 +461,7 @@
   }
 }
 .custom-btn {
-  padding: 5px 10px;
+  padding: 5px 15px;
   border-radius: 2px;
   display: inline-block;
   font-size: 16px;
@@ -426,6 +470,8 @@
   color: #fff !important;
   line-height: 35px;
   margin-right: 15px;
+  outline: none;
+  border: 0;
   &:active {
     -webkit-box-shadow: inset 0 3px 5px rgba($jetblack, .125);
     box-shadow: inset 0 3px 5px rgba($jetblack, .125);
@@ -435,6 +481,12 @@
   }
   &.success {
     background-color: $success;
+  }
+  &.purple, &.btn {
+    background-color: $btn-color;
+  }
+  &.btn-gray {
+    background-color: $btn-gray;
   }
 }
 

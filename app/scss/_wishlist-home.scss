@@ -12,75 +12,11 @@
     ul li {
       @include col(1/3, $gutter: 1.4, $cycle: 3);
       margin-bottom: 14px;
-      .overlay-name-company {
-        bottom: 0;
-        h3 {
-          border-bottom: 1px solid $brand-color;
-          font-size: 28px;
-        }
-        a {
-          display: initial;
-        }
-      }
     }
   }
   .you_might_like li {
     margin-bottom: 0 !important;
-    .overlay-name-company {
-      bottom: -50px !important;
-    }
-    &:hover {
-      .overlay-name-company {
-        bottom: 0 !important;
-      }
-    }
-    .action-item {
-      text-transform: uppercase;
-      color: $white;
-      &:last-child {
-        float: right;
-        &:after {
-          content: "+";
-          position: relative;
-          left: -14px;
-          color: $jetblack;
-          font-size: 12px;
-          top: -3px;
-        }
-      }
-    }
-  }
-}
-.wish-meta {
-  padding: 16px;
-  font-size: 16px;
-  .category {
-    max-width: 180px;
-    display: inline-block;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-  }
-  .price {
-    float: right;
   }
 }
 
-.cta-block {
-  font-size: 16px;
-  background-color: rgba($brand-color, 1);
-  padding: 16px;
-  select {
-    display: inline-block;
-  }
-  .add-selection {
-    color: $white;
-    text-transform: uppercase;
-    margin-left: 25px;
-    font-size: 14px;
-    .fa {
-      padding-left: 5px;
-    }
-  }
-}
 

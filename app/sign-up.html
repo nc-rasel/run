@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!--
+  runway.com
+  v1
+  Written by S.M Rasel Mahamud (Creative Director | rasel.me | rasel.rony@sekai-lab-bd.com)
+-->
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>Runway.Moda</title>
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200,700,600,300italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/styles.min.css">
+  <script type="text/javascript" src="js/vendor/modernizr-custom.js"></script>
+  <script type="text/javascript" src="js/ejs_0.9_alpha_1_production.js"></script>
+</head>
+<body>
+  <div class="page-wrap">
+    <div id="navigation" class="primary-header navbar" role="navigation"></div>
+    <div class="login-register-forget-wrapper slide-5">
+      <div class="log-reg-block">
+        <h3>Sign Up</h3>
+        <form action="" method="post">
+          <input type="email" placeholder="Email address" id="email" name="email" value="" required>
+          <input type="password" placeholder="Password" required>
+          <p class="form-tips">
+          <span>You wish to sign up as a :</span>
+          <input type="radio" name="role" value="designer" id="designer" checked><label for="designer">Designer</label>
+            <input type="radio" name="role" value="organizer" id="organizer"><label for="organizer">Organizer</label><input type="radio" name="role" value="customer" id="customer"><label for="customer">Customer</label></p>
+            <p class="form-tips">
+              By signing up you agree to our <a href="#">terms of use</a> and <a href="#">privacy policy</a>
+            </p>
+          <footer>
+          <input type="submit" value="Submit" class="custom-btn purple">
+          </footer>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div id='footer' class="primary-footer template site-footer"></div>
+  <div id="test-popup" class="white-popup mfp-with-anim mfp-hide subscribe"></div>
+  <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
+  <script type="text/javascript" src="js/vendor/jquery.magnific-popup.js"></script>
+  <script type="text/javascript" src="js/vendor/jquery.fitvids1.1.js"></script>
+  <script type="text/javascript" src="js/vendor/jquery.bxslider.js"></script>
+  <script type="text/javascript" src="js/vendor/classie.js"></script>
+  <script type='text/javascript'>
+    new EJS({url: 'partials/header-nav.ejs'}).update('navigation', {poo :'ha ha ha'});
+    new EJS({url: 'partials/footer.ejs'}).update('footer', {poo :'ha ha ha'});
+    new EJS({url: 'partials/modal/subscription.ejs'}).update('test-popup', {poo :'ha ha ha'});
+  </script>
+
+  <script type="text/javascript">
+  (function($,sr){
+
+  // debouncing function from John Hann
+  // http://unscriptable.com/index.php/2009/03/20/debouncing-javascript-methods/
+  var debounce = function (func, threshold, execAsap) {
+      var timeout;
+
+      return function debounced () {
+          var obj = this, args = arguments;
+          function delayed () {
+              if (!execAsap)
+                  func.apply(obj, args);
+              timeout = null;
+          };
+
+          if (timeout)
+              clearTimeout(timeout);
+          else if (execAsap)
+              func.apply(obj, args);
+
+          timeout = setTimeout(delayed, threshold || 100);
+      };
+  }
+  // smartresize 
+  jQuery.fn[sr] = function(fn){  return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr); };
+
+})(jQuery,'smartresize');
+
+
+      function slideHeight() {
+        var windowHeight = $(window).height(),
+        navHeight = $('#navigation').height();
+        footerHeight = $('#footer').height();
+
+        $('.login-register-forget-wrapper').height(windowHeight - navHeight - footerHeight);
+      }
+
+      slideHeight();
+
+  // usage:
+  $(window).smartresize(function(){
+    var windowHeight = $(window).height(),
+        navHeight = $('#navigation').height();
+        footerHeight = $('#footer').height();
+
+    $('.login-register-forget-wrapper').height(windowHeight - navHeight - footerHeight);
+  });
+
+   $(document).ready(function(e) {
+      $(".open-popup-link").magnificPopup({
+        type:'inline',
+        midClick: true,
+
+        removalDelay: 500,
+        callbacks: {
+          beforeOpen: function() {
+          this.st.mainClass = this.st.el.attr('data-effect');
+          }
+        },
+      });
+      // Dynamically created
+      $('.open-search-popup').magnificPopup({
+        items: {
+          removalDelay: 300,
+          mainClass: 'mfp-fade',
+          src: '<div class="white-popup search-modal">' +
+          '<form action="">' +
+          '<input id="search" type="search" tabindex="1" i18n-values="placeholder:searchButton"  placeholder="Type and enter..." autofocus>' +
+          '<i class="fa fa-fw"></i>' +
+          '<p>You can search by product name, Designer name, collection name. etc.</p>' +
+          '</form>' +
+          '</div>',
+          type: 'inline'
+        },
+        closeBtnInside: true
+      });
+
+   });
+
+  </script>
+ </body>
+ </html>

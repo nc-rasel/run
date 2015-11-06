@@ -14,17 +14,8 @@
       }
     }
   }
-  .three-fourth ul li {
-    .overlay-name-company {
-      bottom: -50px;
-    }
-    &:hover {
-      .overlay-name-company {
-        bottom: 0;
-      }
-    }
-  }
 }
+// collections slider
 .collections {
   .single-item {
     &:hover, &.active {
@@ -35,10 +26,9 @@
   }
   .overlay-name-company {
     h3 {
-      font-weight: 400;
+      border: none;
       font-size: 16px;
       padding-left: 10px !important;
-      text-align: left;
     }
   }
 }
